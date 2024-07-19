@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseServices
-build_property.ProjectDir = C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseService\
+build_property.ProjectDir = C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseService\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

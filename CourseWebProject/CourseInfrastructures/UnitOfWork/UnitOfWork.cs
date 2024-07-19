@@ -18,7 +18,8 @@ namespace CourseInfrastructure
         private ISectionRepository _sectionRepository;
 
         private ISubCategoryRepository _subCategoryRepository;
-        private InstructureRepository instructureRepository;
+
+        private IInstructorRepository _instructorRepository;
 
         private IStudentCourseRepository _studentCourseRepository;
 
@@ -26,6 +27,8 @@ namespace CourseInfrastructure
         {
             _dbContext = dbContext;
         }
+
+        public IInstructorRepository InstructorRepository => _instructorRepository ?? new InstructorRepository(_dbContext);
         public ISubCategoryRepository SubCategoryRepository => _subCategoryRepository ?? new SubCategoryRepository(_dbContext);
 
         public IUserRepository UserRepository => _userRepository ?? new UserRepository(_dbContext);
