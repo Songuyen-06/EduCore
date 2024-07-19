@@ -22,6 +22,7 @@ namespace CourseDomain
 
         ISubCategoryRepository SubCategoryRepository {  get; }
 
+        IInstructorRepository  InstructorRepository { get; }
         Task Commit();
         Task Rollback();
     }

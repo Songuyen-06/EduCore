@@ -16,21 +16,27 @@ namespace CourseWeb.Pages
 
         private IReviewService _reviewService { get; set; }
 
+        private IInstructorService _instructorService { get; set; }
+
         [BindProperty]
         public List<CourseDTO> TopSellingCourses { get; set; }
 
         //private List<CategoryDTO> Categories { get; set; }
-        //private List<UserDTO> Instructors { get; set; }
+
+        [BindProperty]
+
+        public List<InstructorDTO> Instructors { get; set; }
 
         [BindProperty]
         public List<ReviewDTO> Reviews { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, ICategoryService categoryService, ICourseService courseService, IReviewService reviewService)
+        public IndexModel(ILogger<IndexModel> logger, ICategoryService categoryService, ICourseService courseService, IReviewService reviewService, IInstructorService instructorService)
         {
             _logger = logger;
             _categoryService = categoryService;
             _courseService = courseService;
             _reviewService = reviewService;
+            _instructorService = instructorService;
         }
 
         public async Task OnGetAsync(int? cateId)
@@ -39,9 +45,9 @@ namespace CourseWeb.Pages
             ViewData["Categories"] = await _categoryService.GetListCategory();
             TopSellingCourses = cateId != null ? await _courseService.GetTopSellingCoursesByCateId(cateId) : await _courseService.GetTopSellingCourses();
             Reviews = await _reviewService.GetListReview();
+            Instructors = await _instructorService.GetListInstructor();
             ViewData["CateId"] = cateId;
 
         }
     }
 }
-

@@ -3256,11 +3256,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj",
       "projectName": "CourseInfrastructure",
-      "projectPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj",
+      "projectPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj",
       "packagesPath": "C:\\Users\\Son\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseInfrastructures\\obj\\",
+      "outputPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseInfrastructures\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3282,8 +3282,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseDomain\\CourseDomain.csproj": {
-              "projectPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseDomain\\CourseDomain.csproj"
+            "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseDomain\\CourseDomain.csproj": {
+              "projectPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseDomain\\CourseDomain.csproj"
             }
           }
         }
