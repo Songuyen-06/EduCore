@@ -1,0 +1,328 @@
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.deps.json
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.runtimeconfig.json
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.exe
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.exe
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.deps.json
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.runtimeconfig.json
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.pdb
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Core.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Identity.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Humanizer.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Json.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.CodeDom.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Memory.Data.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.pdb
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.AssemblyReference.cache
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfoInputs.cache
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfo.cs
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.CoreCompileInputs.cache
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.sourcelink.json
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseIn.C4ED05C5.Up2Date
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\refint\CourseInfrastructure.dll
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.pdb
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.genruntimeconfig.cache
+D:\C#\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\ref\CourseInfrastructure.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.deps.json
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.runtimeconfig.json
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.exe
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.exe
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.deps.json
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.runtimeconfig.json
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.pdb
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Humanizer.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.pdb
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.AssemblyReference.cache
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfoInputs.cache
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfo.cs
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.sourcelink.json
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.CopyComplete
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\refint\CourseInfrastructure.dll
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.pdb
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.genruntimeconfig.cache
+C:\Users\minhd\OneDrive\Desktop\WebCourse\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\ref\CourseInfrastructure.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.deps.json
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.runtimeconfig.json
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.exe
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.exe
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.deps.json
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.runtimeconfig.json
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.pdb
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.pdb
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.AssemblyReference.cache
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfoInputs.cache
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfo.cs
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.sourcelink.json
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseIn.C4ED05C5.Up2Date
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\refint\CourseInfrastructure.dll
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.pdb
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.genruntimeconfig.cache
+C:\Users\Son\OneDrive\Máy tính\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\ref\CourseInfrastructure.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.deps.json
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.runtimeconfig.json
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.exe
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.exe
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.deps.json
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.runtimeconfig.json
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseInfrastructure.pdb
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Core.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Humanizer.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\bin\Debug\net7.0\CourseDomain.pdb
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.AssemblyInfo.cs
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.sourcelink.json
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseIn.C4ED05C5.Up2Date
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\refint\CourseInfrastructure.dll
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.pdb
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\CourseInfrastructure.genruntimeconfig.cache
+C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseInfrastructures\obj\Debug\net7.0\ref\CourseInfrastructure.dll
