@@ -17,7 +17,9 @@ ODataConventionModelBuilder modelBuilder = new ODataConventionModelBuilder();
 modelBuilder.EntitySet<ReviewDTO>("Review");
 modelBuilder.EntitySet<CourseDTO>("Course");
 modelBuilder.EntitySet<SectionDTO>("Section");
-modelBuilder.EntitySet<Category>("Category");
+modelBuilder.EntitySet<CategoryDTO>("Category");
+modelBuilder.EntitySet<InstructorDTO>("Instructor");
+
 modelBuilder.EntitySet<UserDTO>("User");
 builder.Services.AddCors(options =>
 {
@@ -42,6 +44,7 @@ builder.Services.AddScoped<ISectionService, SectionService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IInstructorService, InstructorService>();
 
 
 

@@ -10,6 +10,8 @@ builder.Services.AddScoped<ICourseService, CourseService>();
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<IInstructorService, InstructorService>();
+
 
 
 builder.Services.AddHttpClient();
