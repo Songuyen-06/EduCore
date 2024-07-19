@@ -3056,24 +3056,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Son\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\minhd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseService\\CourseServices.csproj",
+      "projectUniqueName": "C:\\Users\\minhd\\OneDrive\\Desktop\\WebCourse\\ProjectPRN231\\CourseWebProject\\CourseService\\CourseServices.csproj",
       "projectName": "CourseServices",
-      "projectPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseService\\CourseServices.csproj",
-      "packagesPath": "C:\\Users\\Son\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseService\\obj\\",
+      "projectPath": "C:\\Users\\minhd\\OneDrive\\Desktop\\WebCourse\\ProjectPRN231\\CourseWebProject\\CourseService\\CourseServices.csproj",
+      "packagesPath": "C:\\Users\\minhd\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\minhd\\OneDrive\\Desktop\\WebCourse\\ProjectPRN231\\CourseWebProject\\CourseService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Son\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\minhd\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3081,15 +3076,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj": {
-              "projectPath": "C:\\Users\\Son\\OneDrive\\Máy tính\\WebCourse\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj"
+            "C:\\Users\\minhd\\OneDrive\\Desktop\\WebCourse\\ProjectPRN231\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj": {
+              "projectPath": "C:\\Users\\minhd\\OneDrive\\Desktop\\WebCourse\\ProjectPRN231\\CourseWebProject\\CourseInfrastructures\\CourseInfrastructure.csproj"
             }
           }
         }
@@ -3098,11 +3092,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3124,7 +3113,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
