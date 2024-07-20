@@ -1,6 +1,6 @@
 ﻿@page
 @using CourseDomain.DTOs
-@model CourseWeb.Pages.Course.IndexModel
+@model CourseWeb.Pages.Student.Course.ListModel
 
 @{
     ViewData["Title"] = "Index";
@@ -12,7 +12,7 @@
     var subCategories = category.SubCategories?.ToList();
     var courseList = @Model.Courses;
 
-    Layout = "../Shared/_Layout.cshtml";
+    Layout = "../../Shared/_Layout.cshtml";
 }
 
 <body>

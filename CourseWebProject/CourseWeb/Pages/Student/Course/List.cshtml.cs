@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace CourseWeb.Pages.Course
+namespace CourseWeb.Pages.Student.Course
 {
-    public class IndexModel : PageModel
+    public class ListModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ILogger<ListModel> _logger;
         private readonly ICourseService _courseService;
         private readonly ICategoryService _categoryService;
 
@@ -23,7 +23,7 @@ namespace CourseWeb.Pages.Course
         //[BindProperty]
         //public List<SubCategoryDTO> SubCategories { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, ICourseService courseService, ICategoryService categoryService)
+        public ListModel(ILogger<ListModel> logger, ICourseService courseService, ICategoryService categoryService)
         {
             _logger = logger;
             _courseService = courseService;
