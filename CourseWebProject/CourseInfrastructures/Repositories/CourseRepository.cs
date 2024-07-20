@@ -31,19 +31,19 @@ namespace CourseInfrastructure
         public IQueryable<Course> GetTopSellingCourses()
         {
             return GetListCourseByInclude()
-                .OrderByDescending(c => c.Checkouts.Count);
+                .OrderByDescending(c => c.Checkouts.Count).Take(8);
         }
 
+        //GetListCourseByCategoryId đang thư nghiệm 
 
         public async Task<IEnumerable<Course>> GetTopSellingCoursesByCateId(int cateId)
         {
 
             var c = await GetListCourseByInclude().Where(c => c.SubCategory.CategoryId == cateId)
-                .OrderByDescending(c => c.Checkouts.Count).ToListAsync();
+                .OrderByDescending(c => c.Checkouts.Count).Take(8).ToListAsync();
             return c;
 
         }
-        //GetListCourseByCategoryId đang thư nghiệm 
         public async Task<IEnumerable<Course>> GetListCourseByCategoryId(int cateId)
         {
             return await GetListCourseByInclude().Where(c => c.SubCategory.CategoryId == cateId).ToListAsync();

@@ -15,7 +15,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 ODataConventionModelBuilder modelBuilder = new ODataConventionModelBuilder();
 modelBuilder.EntitySet<ReviewDTO>("Review");
-modelBuilder.EntitySet<CourseDTO>("Course");
+modelBuilder.EntitySet<CourseDetailDTO>("Course");
 modelBuilder.EntitySet<SectionDTO>("Section");
 modelBuilder.EntitySet<CategoryDTO>("Category");
 modelBuilder.EntitySet<InstructorDTO>("Instructor");

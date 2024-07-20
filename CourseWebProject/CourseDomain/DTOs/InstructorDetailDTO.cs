@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace CourseDomain.DTOs
 {
     public  class InstructorDetailDTO: InstructorDTO
-    { 
-        private List<CourseDTO> Courses {  get; set; }
-        private List<ReviewDTO> Reviews { get; set; }
+    {
+        [JsonPropertyOrder(13)]
+        public  List<CourseDetailDTO> Courses {  get; set; }
+
+        [JsonPropertyOrder(14)]
+        public List<ReviewDTO> Reviews { get; set; }
     }
 }

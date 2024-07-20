@@ -10,20 +10,20 @@ namespace CourseServices
     {
         Task AddStudentCourse(StudentCourseDTO sc);
 
-        Task<List<CourseDTO>> GetListCourseBySubCategoryId(int cateId);
-        public Task<List<CourseDTO>> GetListCourseByCategoryId(int cateId);
+        Task<List<CourseDetailDTO>> GetListCourseBySubCategoryId(int cateId);
+        public Task<List<CourseDetailDTO>> GetListCourseByCategoryId(int cateId);
 
-        Task<List<CourseDTO>> GetListCourse();
-        Task<CourseDTO> GetCourseByCourseId(int id);
-        Task<List<CourseDTO>> GetListCourseByStudentId(int stdId, bool isInCart);
+        Task<List<CourseDetailDTO>> GetListCourse();
+        Task<CourseDetailDTO> GetCourseByCourseId(int id);
+        Task<List<CourseDetailDTO>> GetListCourseByStudentId(int stdId, bool isInCart);
 
-         Task AddCourse(  PartialCourseDTO cDTO);
-        Task UpdateCourse(PartialCourseDTO cDTO, int courseId);
+         Task AddCourse( CourseDTO cDTO);
+        Task UpdateCourse(CourseDTO cDTO, int courseId);
         Task DeleteCourse(Course course);
 
-        public Task<List<CourseDTO>> GetTopSellingCourses();
+        public Task<List<CourseDetailDTO>> GetTopSellingCourses();
 
-        public Task<List<CourseDTO>> GetTopSellingCoursesByCateId(int cateId);
+        public Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int cateId);
 
     }
 }

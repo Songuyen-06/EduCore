@@ -3,6 +3,7 @@ using CourseDomain.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,7 +21,15 @@ namespace CourseDomain.Profiles
                             .ForMember(dest => dest.NumberCourse, opt => opt.MapFrom(opt => opt.Courses.Count))
                              .ForMember(dest => dest.SubCategories, opt => opt.MapFrom(opt => opt.Courses.Select(c => c.SubCategory).Distinct()))
                           .ReverseMap();
+            CreateMap<User,InstructorDetailDTO>()
+                .IncludeBase<User, InstructorDTO>()
+                 .ForMember(dest => dest.Courses, opt => opt.MapFrom(opt => opt.Courses))
+                   .ForMember(dest => dest.Reviews, opt => opt.MapFrom(opt => opt.Courses.SelectMany(c=>c.Reviews)))
+                     .ReverseMap();
+
+          
 
         }
+       
     }
 }

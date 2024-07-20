@@ -1,37 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using CourseDomain.Contracts;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace CourseDomain.DTOs
 {
     public class CourseDTO
     {
         [Key]
+        [JsonPropertyOrder(0)]
         public int CourseId { get; set; }
-        public string? SubCategoryName { get; set; }
+
+        [JsonPropertyOrder(1)]
+        public int? SubCategoryId { get; set; }
+
+        [JsonPropertyOrder(3)]
         public string Title { get; set; }
-        public string Description { get; set; }
-        public string? InstructorName { get; set; }
-        public decimal Rating { get; set; }
-        public int? RatingNumber { get; set; }
-        public int? StudentNumber { get; set; }
-
-        public string Level { get; set; }
-
-        public decimal Price { get; set; }
-        public int Sale { get; set; }
-        public decimal? PriceAfterSale { get; set; }
-
-        public string Duration { get; set; }
-        public int? SectionNumber { get; set; }
-        public int? LectureNumber { get; set; }
-
-        public string? UrlImage {  get; set; }
+        [JsonPropertyOrder(4)]
+        public string? Description { get; set; }
 
 
+        [JsonPropertyOrder(5)]
+        public int? InstructorId { get; set; }
+
+        [JsonPropertyOrder(7)]
+        public decimal? Rating { get; set; }
+
+        [JsonPropertyOrder(10)]
+        public string? Level { get; set; }
+
+        [JsonPropertyOrder(11)]
+        public decimal?Price { get; set; }
+
+        [JsonPropertyOrder(12)]
+        public int ?Sale { get; set; }
+
+        [JsonPropertyOrder(16)]
+        public string? Url { get; set; }
+
+        [JsonPropertyOrder(17)]
+        public string? Duration { get; set; }
     }
-
 }

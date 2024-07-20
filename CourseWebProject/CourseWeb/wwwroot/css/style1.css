@@ -144,7 +144,7 @@
     margin-left: 8px;
 }
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
     .navbar .nav-item .dropdown-menu {
         display: block;
         visibility: hidden;
@@ -169,7 +169,7 @@
     border-radius: 10px !important;
     transition: .5s;
     opacity: 1;
-}
+}*/
 
 #searchModal .modal-content {
     background: rgba(255, 255, 255, .8);
