@@ -9,22 +9,22 @@ namespace CourseDomain.DTOs
 {
     public  class CertificateDTO
     {
-        [JsonPropertyOrder(2)]
+        [JsonPropertyOrder(0)]
         public int CertificateId { get; set; }
 
-        [JsonPropertyOrder(3)]
+        [JsonPropertyOrder(1)]
         public string Title { get; set; }
 
-        [JsonPropertyOrder(4)]
+        [JsonPropertyOrder(2)]
         public string Description { get; set; } = null!;
 
 
 
 
-        [JsonPropertyOrder(5)]
+        [JsonPropertyOrder(3)]
         public string IssuedBy { get; set; } = null!;
 
-        [JsonPropertyOrder(6)]
+        [JsonPropertyOrder(4)]
         public string CertificateUrl { get; set; } = null!;
     }
 }
