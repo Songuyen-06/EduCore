@@ -26,7 +26,12 @@ namespace CourseAPI.Controllers
             return Ok(courses);
         }
 
-
+        [HttpGet("getListCourseByInstructorId/{id}")]
+        public async Task<IActionResult> GetListCourseByInstructorId(int id)
+        {
+            var courses = await _courseService.GetListCourseByInstructorId(id);
+            return Ok(courses);
+        }
 
         // GET: api/Course
         [HttpGet("getCourseByCourseId/{courseId}")]
@@ -76,6 +81,8 @@ namespace CourseAPI.Controllers
 
             return Ok();
         }
+
+
 
         [HttpPost("addCourse")]
         public async Task<IActionResult> AddCourse([FromBody] PartialCourseDTO cDTO)

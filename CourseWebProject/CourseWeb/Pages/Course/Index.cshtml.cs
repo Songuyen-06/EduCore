@@ -14,7 +14,7 @@ namespace CourseWeb.Pages.Course
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly ICourseService _courseService;
+        private readonly ICourseService _courseService; 
         private readonly ICategoryService _categoryService;
 
         [BindProperty]

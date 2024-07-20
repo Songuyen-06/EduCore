@@ -12,7 +12,12 @@ namespace CourseWeb.Services
         {
             _httpClient = httpClient;
         }
-        
+
+        public async Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId)
+        {
+            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByInstructorId/{instructorId}");
+            return await response.Content.ReadFromJsonAsync<List<CourseDTO>>();
+        }
 
         public async Task<List<CourseDTO>> GetListCoursesByCategoryId(int cateId)
         {          
