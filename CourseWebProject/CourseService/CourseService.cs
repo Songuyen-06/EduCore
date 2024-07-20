@@ -17,7 +17,7 @@ namespace CourseServices
             _mapper = mapper;
         }
 
-        public async Task AddCourse(PartialCourseDTO cDTO)
+        public async Task AddCourse(CourseDTO cDTO)
         {
             try
             {
@@ -47,7 +47,7 @@ namespace CourseServices
             }
         }
 
-        public async Task UpdateCourse(PartialCourseDTO cDTO, int courseId)
+        public async Task UpdateCourse(CourseDTO cDTO, int courseId)
         {
 
             try
@@ -89,28 +89,28 @@ namespace CourseServices
             _unitOfWork.CourseRepository.Remove(course);
             await _unitOfWork.Commit();
         }
-        public async Task<List<CourseDTO>> GetListCourseByCategoryId(int cateId)
+        public async Task<List<CourseDetailDTO>> GetListCourseByCategoryId(int cateId)
         {
-            return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseByCategoryId(cateId));
+            return _mapper.Map<List<CourseDetailDTO>>(await _unitOfWork.CourseRepository.GetListCourseByCategoryId(cateId));
         }
-        public async Task<List<CourseDTO>> GetListCourseBySubCategoryId(int subCateId)
+        public async Task<List<CourseDetailDTO>> GetListCourseBySubCategoryId(int subCateId)
         {
-            return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseBySubCategoryId(subCateId));
+            return _mapper.Map<List<CourseDetailDTO>>(await _unitOfWork.CourseRepository.GetListCourseBySubCategoryId(subCateId));
         }
-        public async Task<CourseDTO> GetCourseByCourseId(int courseId)
+        public async Task<CourseDetailDTO> GetCourseByCourseId(int courseId)
         {
-            return _mapper.Map<CourseDTO>(await _unitOfWork.CourseRepository.GetCourseByCourseId(courseId));
-        }
-
-        public async Task<List<CourseDTO>> GetListCourseByStudentId(int stdId, bool isInCart)
-        {
-            return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseByStudentId(stdId, isInCart));
+            return _mapper.Map<CourseDetailDTO>(await _unitOfWork.CourseRepository.GetCourseByCourseId(courseId));
         }
 
-
-        public async Task<List<CourseDTO>> GetListCourse()
+        public async Task<List<CourseDetailDTO>> GetListCourseByStudentId(int stdId, bool isInCart)
         {
-            return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseByInclude().ToListAsync());
+            return _mapper.Map<List<CourseDetailDTO>>(await _unitOfWork.CourseRepository.GetListCourseByStudentId(stdId, isInCart));
+        }
+
+
+        public async Task<List<CourseDetailDTO>> GetListCourse()
+        {
+            return _mapper.Map<List<CourseDetailDTO>>(await _unitOfWork.CourseRepository.GetListCourseByInclude().ToListAsync());
         }
 
 
@@ -130,13 +130,13 @@ namespace CourseServices
 
       
 
-        public async Task<List<CourseDTO>> GetTopSellingCourses()
+        public async Task<List<CourseDetailDTO>> GetTopSellingCourses()
         {
-            return _mapper.Map<List<CourseDTO>>( await _unitOfWork.CourseRepository.GetTopSellingCourses().ToListAsync());
+            return _mapper.Map<List<CourseDetailDTO>>( await _unitOfWork.CourseRepository.GetTopSellingCourses().ToListAsync());
         }
-        public async Task<List<CourseDTO>> GetTopSellingCoursesByCateId(int cateId)
+        public async Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int cateId)
         {
-            return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseByCategoryId(cateId));
+            return _mapper.Map<List<CourseDetailDTO>>(await _unitOfWork.CourseRepository.GetListCourseByCategoryId(cateId));
         }
 
        

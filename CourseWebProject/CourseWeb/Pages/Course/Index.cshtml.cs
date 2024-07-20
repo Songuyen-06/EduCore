@@ -18,7 +18,7 @@ namespace CourseWeb.Pages.Course
         private readonly ICategoryService _categoryService;
 
         [BindProperty]
-        public List<CourseDTO> Courses { get; set; }
+        public List<CourseDetailDTO> Courses { get; set; }
 
         //[BindProperty]
         //public List<SubCategoryDTO> SubCategories { get; set; }
