@@ -1,9 +1,9 @@
 ﻿@page
 @using CourseDomain.DTOs
-@model CourseWeb.Pages.IndexModel
+@model CourseWeb.Pages.Student.IndexModel
 @{
 
-    Layout = "Shared/_Layout.cshtml";
+    Layout = "../Shared/_Layout.cshtml";
     var categoryList = ViewData["Categories"] as List<CategoryDTO>;
     var cateId = (int?)ViewData["CateId"];
 }
