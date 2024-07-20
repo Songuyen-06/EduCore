@@ -218,7 +218,7 @@
                                         <span class="badge text-muted bg-primary">@course.Duration</span>
                                     </div>
                                     <a href="courses-details.html">
-                                        <img src="@course.UrlImage" class="w-100 img-fluid rounded-3" alt="image">
+                                        <img src="@course.Url" class="w-100 img-fluid rounded-3" alt="image">
                                     </a>
                                 </div>
                                 <div class="card-body p-0">
@@ -234,7 +234,7 @@
                                         <span class="rating d-flex align-items-center mb-2">
                                             <h6 class="text-primary m-0 me-2">@course.Rating</h6>
                                             @{
-                                                var floorStars = (int)Math.Floor(course.Rating);
+                                                var floorStars = (int)Math.Floor(course.Rating??0);
                                                 var halfStar = course.Rating % 1 >= 0.5m;
                                                 var totalStars = 5;
                                             }
@@ -256,7 +256,9 @@
                                         </span>
                                         <h4 class="">
                                             @course.PriceAfterSale?.ToString("N0")đ
-                                            <span class="fs-6 text-black opacity-25 text-decoration-line-through">@course.Price.ToString("N0")</span>
+                                            <span class="fs-6 text-black opacity-25 text-decoration-line-through">
+                                                @course.Price?.ToString("N0") 
+                                            </span>
                                             <span><h6 class="d-inline">-@course.Sale%</h6></span>
                                         </h4>
                                         <div class="d-flex flex-wrap mt-2">
@@ -348,18 +350,11 @@
                         }
                         <div class="p-4 rounded-bottom">
                             <h4>@i.FullName</h4>
-                            @{
-                                var subCategories = i.SubCategories.ToList();
-                                var count = subCategories.Count;
-                            }
-
-                            @for (int index = 0; index < count; index++)
-                            {
+ 
                                 <span>
-                                    @subCategories[index].SubCategoryName
-                                    @(index < count - 1 ? "," : "")
+                                    @i.SubCategories.Select(sc => sc.SubCategoryName).Aggregate((s1, s2) => s1 + ", " + s2)                                
                                 </span>
-                            }
+                           
 
                             <div class=" mt-3 mb-1">
                                 <span class="badge text-muted bg-success d-inline">@i.NumberStudent students</span>
@@ -380,7 +375,7 @@
     </div>
 
     <!-------------Blog----------->
-    <section id="blog" class="padding-medium">
+   @*  <section id="blog" class="padding-medium">
         <div class="container">
             <div class="text-center">
                 <h2 class="display-5 fw-semibold">view our <span class="text-primary"> latest blogs</span></h2>
@@ -413,7 +408,7 @@
 
             </div>
     </section>
-
+ *@
 
 
     <section id="testimonial" style="background-image:url(images/background-img.jpg); background-repeat: no-repeat; ">

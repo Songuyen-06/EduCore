@@ -14,24 +14,28 @@ namespace CourseWeb.Services
         }
         
 
-        public async Task<List<CourseDTO>> GetListCoursesByCategoryId(int cateId)
+        public async Task<List<CourseDetailDTO>> GetListCoursesByCategoryId(int cateId)
         {          
           
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByCategoryId/{cateId}");
             response.EnsureSuccessStatusCode();
 
-            return await response.Content.ReadFromJsonAsync<List<CourseDTO>>();
+            return await response.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
+        }
+        public async Task<int> GetNumberCourses()
+        {
+            return await _httpClient.GetAsync("https://localhost:7004/odata/Course/$count").Result.Content.ReadFromJsonAsync<int>();
+
         }
 
 
-
-        public async Task<List<CourseDTO>> GetListCoursesBySubCategoryId(int? subCateId)
+        public async Task<List<CourseDetailDTO>> GetListCoursesBySubCategoryId(int? subCateId)
         {
            
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseBySubCategoryId/{subCateId}");
             response.EnsureSuccessStatusCode();
 
-            return await response.Content.ReadFromJsonAsync<List<CourseDTO>>();
+            return await response.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
         }
 
 
@@ -47,13 +51,13 @@ namespace CourseWeb.Services
             return numberPage;
         }
 
-        public async Task<List<CourseDTO>> GetTopSellingCourses()
+        public async Task<List<CourseDetailDTO>> GetTopSellingCourses()
         {
-            return await _httpClient.GetAsync($"{_baseAPIRoute}/Course/GetTopSellingCourses").Result.Content.ReadFromJsonAsync<List<CourseDTO>>();
+            return await _httpClient.GetAsync($"{_baseAPIRoute}/Course/GetTopSellingCourses").Result.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
         }
-        public async Task<List<CourseDTO>> GetTopSellingCoursesByCateId(int? cateId)
+        public async Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int? cateId)
         {
-            return await _httpClient.GetAsync($"{_baseAPIRoute}/Course/GetTopSellingCoursesByCateId/{cateId}").Result.Content.ReadFromJsonAsync<List<CourseDTO>>();
+            return await _httpClient.GetAsync($"{_baseAPIRoute}/Course/GetTopSellingCoursesByCateId/{cateId}").Result.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
         }
 
        

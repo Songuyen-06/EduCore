@@ -19,7 +19,7 @@ namespace CourseWeb.Pages
         private IInstructorService _instructorService { get; set; }
 
         [BindProperty]
-        public List<CourseDTO> TopSellingCourses { get; set; }
+        public List<CourseDetailDTO> TopSellingCourses { get; set; }
 
         //private List<CategoryDTO> Categories { get; set; }
 

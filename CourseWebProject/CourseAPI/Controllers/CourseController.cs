@@ -78,7 +78,7 @@ namespace CourseAPI.Controllers
         }
 
         [HttpPost("addCourse")]
-        public async Task<IActionResult> AddCourse([FromBody] PartialCourseDTO cDTO)
+        public async Task<IActionResult> AddCourse([FromBody] CourseDTO cDTO)
         {
             await _courseService.AddCourse(cDTO);
 
@@ -87,7 +87,7 @@ namespace CourseAPI.Controllers
 
 
         [HttpPost("updateCourse/{courseId}")]
-        public async Task<IActionResult> UpdateCourse([FromBody] PartialCourseDTO cDTO, int courseId)
+        public async Task<IActionResult> UpdateCourse([FromBody] CourseDTO cDTO, int courseId)
         {
             await _courseService.UpdateCourse(cDTO, courseId);
 
@@ -95,12 +95,14 @@ namespace CourseAPI.Controllers
         }
 
         [HttpGet("getTopSellingCourses")]
+        [EnableQuery]
         public async Task<IActionResult> GetTopSellingCourses()
         {
             return Ok(await _courseService.GetTopSellingCourses());
 
         }
         [HttpGet("getTopSellingCoursesByCateId/{cateId}")]
+        [EnableQuery]
         public async Task<IActionResult> GetTopSellingCoursesByCateId(int cateId)
         {
             return Ok(await _courseService.GetListCourseByCategoryId(cateId));

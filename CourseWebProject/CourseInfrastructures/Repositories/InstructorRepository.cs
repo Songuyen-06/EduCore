@@ -22,5 +22,10 @@ namespace CourseInfrastructure.Repositories
                 Include(u => u.Courses).ThenInclude(c => c.Enrollments)
                   .Include(u => u.Courses).ThenInclude(c => c.SubCategory);
         }
+        //public Task<IEnumerable<User>> GetInstructorDetailById(int Id)
+        //{
+
+        //      return GetListInstructor.
+        //}
     }
 }

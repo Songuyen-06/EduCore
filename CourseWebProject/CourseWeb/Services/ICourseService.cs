@@ -4,12 +4,14 @@ namespace CourseWeb.Services
 {
     public interface ICourseService
     {
-        public Task<List<CourseDTO>> GetListCoursesByCategoryId(int cateId);
-        public  Task<List<CourseDTO>> GetListCoursesBySubCategoryId(int? subCateId);
+        public Task<List<CourseDetailDTO>> GetListCoursesByCategoryId(int cateId);
+        public  Task<List<CourseDetailDTO>> GetListCoursesBySubCategoryId(int? subCateId);
         public int GetNumberPageCourse(int cateId);
 
-        public Task<List<CourseDTO>> GetTopSellingCourses();
-        public Task<List<CourseDTO>> GetTopSellingCoursesByCateId(int? cateId);
+        public Task<List<CourseDetailDTO>> GetTopSellingCourses();
+        public Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int? cateId);
+
+        public Task<int> GetNumberCourses();
 
     }
 }
