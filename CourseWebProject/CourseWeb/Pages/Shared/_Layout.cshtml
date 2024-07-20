@@ -107,14 +107,14 @@
                                                 @foreach (var cate in categories)
                                                 {
                                                     <li class="dropdown-submenu">
-                                                        <a href="/Course?cateId=@cate.CategoryId" class="dropdown-item dropdown-toggle">@cate.CategoryName</a>
+                                                        <a href="/Student/Course/List?cateId=@cate.CategoryId" class="dropdown-item dropdown-toggle">@cate.CategoryName</a>
                                                         <ul class="dropdown-menu">
                                                             @if (cate.SubCategories.Any())
                                                             {
                                                                 foreach (var subCate in cate.SubCategories)
                                                                 {
                                                                     <li>
-                                                                        <a href="/Course?cateId=@cate.CategoryId&subCateId=@subCate.SubCategoryId" class="dropdown-item">@subCate.SubCategoryName</a>
+                                                                        <a href="/Student/Course/List?cateId=@cate.CategoryId&subCateId=@subCate.SubCategoryId" class="dropdown-item">@subCate.SubCategoryName</a>
                                                                     </li>
                                                                 }
                                                             }

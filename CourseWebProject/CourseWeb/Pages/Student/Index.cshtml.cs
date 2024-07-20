@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Net.Http.Json;
 
-namespace CourseWeb.Pages
+namespace CourseWeb.Pages.Student
 {
     public class IndexModel : PageModel
     {
