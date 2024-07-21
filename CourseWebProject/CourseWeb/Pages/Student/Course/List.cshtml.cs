@@ -13,13 +13,8 @@ namespace CourseWeb.Pages.Student.Course
 {
     public class ListModel : PageModel
     {
-<<<<<<<< HEAD:CourseWebProject/CourseWeb/Pages/Student/Course/List.cshtml.cs
         private readonly ILogger<ListModel> _logger;
         private readonly ICourseService _courseService;
-========
-        private readonly ILogger<IndexModel> _logger;
-        private readonly ICourseService _courseService; 
->>>>>>>> origin/minhdn:CourseWebProject/CourseWeb/Pages/Courses/Index.cshtml.cs
         private readonly ICategoryService _categoryService;
 
         [BindProperty]

@@ -24,7 +24,7 @@ namespace CourseWeb.Pages.Instructor
         public async Task<RedirectToPageResult> OnPostAsync(CourseDTO course)
         {
             if (course.Price != null && !string.IsNullOrEmpty(course.Title) && !string.IsNullOrEmpty(course.Duration)
-                 && !string.IsNullOrEmpty(course.Description) && !string.IsNullOrEmpty(course.Level) && !string.IsNullOrEmpty(course.UrlImage))
+                 && !string.IsNullOrEmpty(course.Description) && !string.IsNullOrEmpty(course.Level) && !string.IsNullOrEmpty(course.Url))
              {
                 HttpClient _httpClient = new HttpClient();
                 var formData = new MultipartFormDataContent
@@ -37,7 +37,7 @@ namespace CourseWeb.Pages.Instructor
                     { new StringContent(course.Level), "level" },
                     { new StringContent(course.Price.ToString()), "price" },
                     { new StringContent(course.Sale.ToString()), "sale" },
-                    { new StringContent(course.UrlImage), "url" },
+                    { new StringContent(course.Url), "url" },
                     { new StringContent(course.Duration), "duration" }
 
                 };
