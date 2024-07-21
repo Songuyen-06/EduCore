@@ -1422,3 +1422,13 @@ C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\De
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.pdb
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.genruntimeconfig.cache
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\ref\CourseWeb.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.AssemblyInfo.cs
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.RazorAssemblyInfo.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.RazorAssemblyInfo.cs
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.sourcelink.json

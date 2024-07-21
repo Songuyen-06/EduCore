@@ -18,6 +18,18 @@ namespace CourseInfrastructure.Repositories
         {
             return await _entitySet.AnyAsync(u => u.UserId == userId);
         }
-       
+        public async Task<User> GetById(int userId)
+        {
+            return await _entitySet.SingleOrDefaultAsync(u => u.UserId == userId);
+        }
+        public async Task UpdateUser(User user)
+        {
+            _entitySet.Update(user);
+            await _dbContext.SaveChangesAsync();
+        }
+        public async Task Add(User user)
+        {
+            await _dbContext.AddAsync(user);
+        }
     }
 }
