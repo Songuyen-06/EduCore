@@ -1138,15 +1138,6 @@ C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseWeb\obj\D
 C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.pdb
 C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.genruntimeconfig.cache
 C:\Users\admin\Desktop\prn231_project\WebCourse\CourseWebProject\CourseWeb\obj\Debug\net7.0\ref\CourseWeb.dll
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.csproj.AssemblyReference.cache
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.AssemblyInfoInputs.cache
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.AssemblyInfo.cs
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.csproj.CoreCompileInputs.cache
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.RazorAssemblyInfo.cache
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.RazorAssemblyInfo.cs
-C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.sourcelink.json
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\Debug\net7.0\CourseAPI.deps.json
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\Debug\net7.0\CourseAPI.runtimeconfig.json
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\Debug\net7.0\CourseServices.deps.json
@@ -1406,6 +1397,16 @@ C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\De
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\Debug\net7.0\CourseDomain.pdb
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\Debug\net7.0\CourseInfrastructure.pdb
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\bin\Debug\net7.0\CourseServices.pdb
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.csproj.AssemblyReference.cache
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.AssemblyInfoInputs.cache
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.AssemblyInfo.cs
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.csproj.CoreCompileInputs.cache
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.RazorAssemblyInfo.cache
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.RazorAssemblyInfo.cs
+C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\CourseWeb.sourcelink.json
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\staticwebassets.build.json
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\staticwebassets.development.json
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\obj\Debug\net7.0\staticwebassets\msbuild.CourseWeb.Microsoft.AspNetCore.StaticWebAssets.props

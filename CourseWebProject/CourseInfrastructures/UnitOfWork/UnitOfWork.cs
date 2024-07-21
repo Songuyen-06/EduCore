@@ -23,11 +23,12 @@ namespace CourseInfrastructure
 
         private IStudentCourseRepository _studentCourseRepository;
 
+        private ICertificateRepositoty _certificateRepositoty;
         public UnitOfWork(CoursesDbContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
         }
-
+        public ICertificateRepositoty CertificateRepositoty => _certificateRepositoty ?? new CertificateRepository(_dbContext);
         public IInstructorRepository InstructorRepository => _instructorRepository ?? new InstructorRepository(_dbContext);
         public ISubCategoryRepository SubCategoryRepository => _subCategoryRepository ?? new SubCategoryRepository(_dbContext);
 

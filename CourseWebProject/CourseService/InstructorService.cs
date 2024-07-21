@@ -20,6 +20,11 @@ namespace CourseServices
             _mapper = mapper;
         }
 
+        public async Task<InstructorDetailDTO> GetInstructorDetailById(int instructorId)
+        {
+            return _mapper.Map<InstructorDetailDTO>(await _unitOfWork.InstructorRepository.GetInstructorDetailById(instructorId));
+        }
+
         public async Task<IEnumerable<InstructorDTO>> GetListInstructor()
         {
             return _mapper.Map<IEnumerable<InstructorDTO>>(await _unitOfWork.InstructorRepository.GetListInstructor().ToListAsync());

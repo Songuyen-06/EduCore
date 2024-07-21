@@ -5,5 +5,7 @@ namespace CourseWeb.Services
     public interface IInstructorService
     {
         public Task<List<InstructorDTO>> GetListInstructor();
+        public Task<int> GetNumberInstructors();
+
     }
 }

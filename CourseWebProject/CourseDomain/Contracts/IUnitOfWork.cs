@@ -23,6 +23,8 @@ namespace CourseDomain
         ISubCategoryRepository SubCategoryRepository {  get; }
 
         IInstructorRepository  InstructorRepository { get; }
+
+         ICertificateRepositoty CertificateRepositoty {  get; }
         Task Commit();
         Task Rollback();
     }

@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
 
-
 namespace CourseDomain.DTOs
 {
     public class UserDTO
@@ -19,12 +18,14 @@ namespace CourseDomain.DTOs
         public string? FullName { get; set; }
 
         [JsonPropertyOrder(3)]
+        [Required(ErrorMessage = "Email is required")]
         public string Email { get; set; } = null!;
 
         [JsonPropertyOrder(4)]
         public string? Phone { get; set; }
 
         [JsonPropertyOrder(5)]
+        [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; } = null!;
 
         [JsonPropertyOrder(6)]

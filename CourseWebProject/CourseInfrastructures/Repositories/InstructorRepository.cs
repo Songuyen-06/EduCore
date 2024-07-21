@@ -22,10 +22,13 @@ namespace CourseInfrastructure.Repositories
                 Include(u => u.Courses).ThenInclude(c => c.Enrollments)
                   .Include(u => u.Courses).ThenInclude(c => c.SubCategory);
         }
-        //public Task<IEnumerable<User>> GetInstructorDetailById(int Id)
-        //{
+        public async Task<User> GetInstructorDetailById(int instructorId)
+        {
 
-        //      return GetListInstructor.
-        //}
+            return await GetListInstructor().Include(u => u.Courses).ThenInclude(c => c.Sections).ThenInclude(s => s.Lectures)
+                .Include(u=>u.Courses).ThenInclude(c=>c.Reviews).ThenInclude(r=>r.Student)
+                .Include(u=>u.Courses).ThenInclude(c=>c.Enrollments)
+                .FirstOrDefaultAsync(u=>u.UserId==instructorId);
+        }
     }
 }
