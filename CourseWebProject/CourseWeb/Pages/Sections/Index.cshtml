@@ -1,6 +1,6 @@
-﻿@page 
-@model CourseWeb.Pages.Instructor.CoursesModel
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@page
+@model CourseWeb.Pages.Sections.IndexModel
+
 @{
     Layout = null;
 }
@@ -292,7 +292,7 @@
                             <div class="card card-table">
                                 <div class="card-body">
                                     <div class="title-header option-title d-sm-flex d-block">
-                                        <h5>Courses List</h5>
+                                        <h5>Sections List By @Model.Course.Title</h5>
                                         <div class="right-options">
                                             <ul>
                                                 <li>
@@ -302,7 +302,7 @@
                                                     <a href="javascript:void(0)">Export</a>
                                                 </li>
                                                 <li>
-                                                    <a class="btn btn-solid" href="/Course/AddCourse">Add Courses</a>
+                                                    <a class="btn btn-solid" href="/Sections/AddSection?courseId=@Model.Course.CourseId">Add Sections</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -312,42 +312,25 @@
                                             <table class="table all-package theme-table table-product" id="table_id">
                                                 <thead>
                                                     <tr>
-                                                        <th>Coures Name</th>
+                                                        <th>Sections Name</th>
                                                         <th>Duration</th>
-                                                        <th>Price</th>
-                                                        <th>Rating</th>
-                                                        <th>SubCategory</th>
-                                                        <th>URL</th>
-                                                        <th>Description</th>
+                                                        <th>Number Lecture</th>
                                                         <th>Option</th>
                                                     </tr>
                                                 </thead>
 
                                                 <tbody>
-                                                    @foreach(var item in Model.ListCourse){
+                                                    @foreach (var item in Model.Sections)
+                                                    {
                                                         <tr>
                                                             <td>@item.Title</td>
 
                                                             <td>@item.Duration</td>
 
-                                                            <td class="td-price">@item.Price</td>
-
-                                                            <td>@item.Rating</td>
-
-                                                            <td>@item.SubCategoryName</td>
-
-                                                            <td>@item.UrlImage</td>
-
-                                                            <td>@item.Description</td>
+                                                            <td class="td-price">@item.LectureNumber</td>
 
                                                             <td>
                                                                 <ul>
-                                                                    <li>
-                                                                        <a href="/Sections/Index?courseId=@item.CourseId">
-                                                                            <i class="ri-eye-line"></i>
-                                                                        </a>
-                                                                    </li>
-
                                                                     <li>
                                                                         <a href="javascript:void(0)">
                                                                             <i class="ri-pencil-line"></i>

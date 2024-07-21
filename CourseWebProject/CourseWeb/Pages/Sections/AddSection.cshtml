@@ -1,14 +1,13 @@
-﻿@page 
-@model CourseWeb.Pages.Instructor.CoursesModel
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@page
+@model CourseWeb.Pages.Sections.AddSectionModel
 @{
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
+    <!-- meta data -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,48 +18,56 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Product</title>
+    <title>Fastkart - Add New Section</title>
 
-    <!-- Google font-->
+    <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
-
-    <!-- Fontawesome css -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
 
     <!-- Linear Icon css -->
     <link rel="stylesheet" href="../assets/css/linearicon.css">
 
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/font-awesome.css">
+
     <!-- Themify icon css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/themify.css">
 
-    <!-- Feather icon css -->
+    <!--Dropzon css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/dropzone.css">
+
+    <!-- Feather icon css-->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/feather-icon.css">
 
     <!-- remixicon css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/remixicon.css">
 
-    <!-- Data Table css -->
-    <link rel="stylesheet" type="text/css" href="../assets/css/datatables.css">
+    <!-- Select2 css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/select2.min.css">
 
     <!-- Plugins css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/chartist.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+
+    <!-- Bootstrap-tag input css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap-tagsinput.css">
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 </head>
 
 <body>
-    <!-- tap on top start-->
+    <!-- tap on top start -->
     <div class="tap-top">
         <span class="lnr lnr-chevron-up"></span>
     </div>
-    <!-- tap on tap end-->
-    <!-- page-wrapper Start-->
+    <!-- tap on tap end -->
+    <!-- page-wrapper start -->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
         <!-- Page Header Start-->
         <div class="page-header">
@@ -191,11 +198,11 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="/Instructor/Courses/1">Courses</a>
+                                            <a href="/Instructor/Courses?instructorId=">Courses</a>
                                         </li>
 
                                         <li>
-                                            <a href="/Instructor/AddCourse">Add New Course</a>
+                                            <a href="add-new-product.html">Add New Course</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -284,111 +291,80 @@
                 </div>
             </div>
             <!-- Page Sidebar Ends-->
-            <!-- Container-fluid starts-->
-            <div class="page-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card card-table">
-                                <div class="card-body">
-                                    <div class="title-header option-title d-sm-flex d-block">
-                                        <h5>Courses List</h5>
-                                        <div class="right-options">
-                                            <ul>
-                                                <li>
-                                                    <a href="javascript:void(0)">import</a>
-                                                </li>
-                                                <li>
-                                                    <a href="javascript:void(0)">Export</a>
-                                                </li>
-                                                <li>
-                                                    <a class="btn btn-solid" href="/Course/AddCourse">Add Courses</a>
-                                                </li>
-                                            </ul>
+
+        <div class="page-body">
+
+            <!-- New Product Add Start -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-sm-8 m-auto">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-header-2">
+                                            <h5>Course Information</h5>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="table-responsive">
-                                            <table class="table all-package theme-table table-product" id="table_id">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Coures Name</th>
-                                                        <th>Duration</th>
-                                                        <th>Price</th>
-                                                        <th>Rating</th>
-                                                        <th>SubCategory</th>
-                                                        <th>URL</th>
-                                                        <th>Description</th>
-                                                        <th>Option</th>
-                                                    </tr>
-                                                </thead>
 
-                                                <tbody>
-                                                    @foreach(var item in Model.ListCourse){
-                                                        <tr>
-                                                            <td>@item.Title</td>
+                                            <form method="post" class="theme-form theme-form-2 mega-form">
 
-                                                            <td>@item.Duration</td>
+                                                <div class="mb-4 row align-items-center">
+                                                    <label class="form-label-title col-sm-3 mb-0">Section Title</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" name="Title" placeholder="Section Title" />
+                                                        <span  class="text-danger"></span>
+                                                    </div>
+                                                </div>
 
-                                                            <td class="td-price">@item.Price</td>
+                                                
 
-                                                            <td>@item.Rating</td>
+                                                <div class="mb-4 row align-items-center">
+                                                    <label class="form-label-title col-sm-3 mb-0">Duration</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" name="Duration" placeholder="Duration" />
+                                                        <span  class="text-danger"></span>
+                                                    </div>
+                                                </div>
 
-                                                            <td>@item.SubCategoryName</td>
+                                                <div class="mb-4 row align-items-center">
+                                                    <label class="form-label-title col-sm-3 mb-0">Position</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" name="Position" placeholder="Position" type="number" />
+                                                        <span  class="text-danger"></span>
+                                                    </div>
+                                                </div>
 
-                                                            <td>@item.UrlImage</td>
-
-                                                            <td>@item.Description</td>
-
-                                                            <td>
-                                                                <ul>
-                                                                    <li>
-                                                                        <a href="/Sections/Index?courseId=@item.CourseId">
-                                                                            <i class="ri-eye-line"></i>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="javascript:void(0)">
-                                                                            <i class="ri-pencil-line"></i>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                           data-bs-target="#exampleModalToggle">
-                                                                            <i class="ri-delete-bin-line"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </td>
-                                                        </tr>
-                                                    }
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                                <div class="mb-4 row align-items-center">
+                                                    <div class="col-sm-9 offset-sm-3">
+                                                        <button type="submit" value="add" class="btn btn-primary">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Container-fluid Ends-->
-
-                <div class="container-fluid">
-                    <!-- footer start-->
-                    <footer class="footer">
-                        <div class="row">
-                            <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
             </div>
+            <!-- New Product Add End -->
+            <!-- footer Start -->
+            <div class="container-fluid">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-12 footer-copyright text-center">
+                            <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- footer En -->
         </div>
+        <!-- Container-fluid End -->
     </div>
-    <!-- page-wrapper End-->
+    <!-- Page Body End -->
+    </div>
+    <!-- page-wrapper End -->
     <!-- Modal Start -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -408,62 +384,6 @@
         </div>
     </div>
     <!-- Modal End -->
-    <!-- Delete Modal Box Start -->
-    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center">
-                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box">
-                        <p>
-                            The permission for the use/group, preview is inherited from the object, object will create a
-                            new permission for this object
-                        </p>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
-                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-target="#exampleModalToggle2"
-                            data-bs-toggle="modal" data-bs-dismiss="modal">
-                        Yes
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle2" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box text-center">
-                        <div class="wrapper">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
-                        </div>
-                        <h4 class="text-content">It's Removed.</h4>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Delete Modal Box End -->
     <!-- latest js -->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
 
@@ -481,23 +401,35 @@
     <!-- Sidebar js -->
     <script src="../assets/js/config.js"></script>
 
+    <!-- bootstrap tag-input js -->
+    <script src="../assets/js/bootstrap-tagsinput.min.js"></script>
+    <script src="../assets/js/sidebar-menu.js"></script>
+
     <!-- customizer js -->
     <script src="../assets/js/customizer.js"></script>
 
+    <!--Dropzon js -->
+    <script src="../assets/js/dropzone/dropzone.js"></script>
+    <script src="../assets/js/dropzone/dropzone-script.js"></script>
+
     <!-- Plugins js -->
-    <script src="../assets/js/sidebar-menu.js"></script>
     <script src="../assets/js/notify/bootstrap-notify.min.js"></script>
     <script src="../assets/js/notify/index.js"></script>
 
-    <!-- Data table js -->
-    <script src="../assets/js/jquery.dataTables.js"></script>
-    <script src="../assets/js/custom-data-table.js"></script>
+    <!-- ck editor js -->
+    <script src="../assets/js/ckeditor.js"></script>
+    <script src="../assets/js/ckeditor-custom.js"></script>
+
+    <!-- select2 js -->
+    <script src="../assets/js/select2.min.js"></script>
+    <script src="../assets/js/select2-custom.js"></script>
 
     <!-- sidebar effect -->
     <script src="../assets/js/sidebareffect.js"></script>
 
     <!-- Theme js -->
     <script src="../assets/js/script.js"></script>
+
 </body>
 
 </html>

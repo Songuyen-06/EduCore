@@ -15,7 +15,7 @@ namespace CourseDomain.DTOs
 
         public int LectureNumber { get; set; }
 
-        public TimeSpan  Duration { get; set; }
+        public String  Duration { get; set; }
 
         public List<LectureDTO> Lectures { get; set; }
     }

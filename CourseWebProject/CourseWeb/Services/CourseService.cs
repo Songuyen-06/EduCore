@@ -18,6 +18,13 @@ namespace CourseWeb.Services
             return null;
         }
 
+        public async Task<CourseDTO> getCourseByCourseId(int courseId)
+        {
+            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getCourseByCourseId/{courseId}");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<CourseDTO>();
+        }
+
         public async Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId)
         {
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByInstructorId/{instructorId}");
