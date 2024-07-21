@@ -19,6 +19,8 @@ modelBuilder.EntitySet<CourseDetailDTO>("Course");
 modelBuilder.EntitySet<SectionDTO>("Section");
 modelBuilder.EntitySet<CategoryDTO>("Category");
 modelBuilder.EntitySet<InstructorDTO>("Instructor");
+modelBuilder.EntitySet<CertificateDTO>("Certificate");
+
 
 modelBuilder.EntitySet<UserDTO>("User");
 builder.Services.AddCors(options =>
@@ -45,6 +47,7 @@ builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IInstructorService, InstructorService>();
+builder.Services.AddScoped<ICertificateService, CertificateService>();
 
 
 

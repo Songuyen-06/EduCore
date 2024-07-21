@@ -19,6 +19,8 @@ namespace CourseDomain.Profiles
                    ForMember(dest => dest.Rating, opt => opt.MapFrom(opt => opt.Rating)).
                 ForMember(dest => dest.Comment, opt => opt.MapFrom(opt => opt.Comment)).
                 ForMember(dest => dest.ReviewDate, opt => opt.MapFrom(src => src.ReviewDate)).
+                   ForMember(dest => dest.UrlImgStudent, opt => opt.MapFrom(src => src.Student.UrlImage)).
+
                                ForMember(dest => dest.ReOpen, opt => opt.MapFrom(opt => opt.ReOpen)).
 
             ReverseMap();

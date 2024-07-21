@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iT2mvPJybo1SJspEQwbv2to6k65EfXkbuIFPcqvXJ54xWzmbdJrGEpjx4IP150AlP/twi+ZNqirN6FTmzboDbQ==",
+  "dgSpecHash": "F41LB5UQcEL0ZOmuota2eI5QEjGly93ibGXFrlJpNsDY+4YY/dsFkNryFTyPaD5EXhzz6bXkc0MWrjyaC+rtQw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseWeb\\CourseWeb.csproj",
   "expectedPackageFiles": [
@@ -131,7 +131,7 @@
     "C:\\Users\\Son\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Son\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Son\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Users\\Son\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Son\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Son\\.nuget\\packages\\nuget.common\\6.6.1\\nuget.common.6.6.1.nupkg.sha512",
     "C:\\Users\\Son\\.nuget\\packages\\nuget.configuration\\6.6.1\\nuget.configuration.6.6.1.nupkg.sha512",
     "C:\\Users\\Son\\.nuget\\packages\\nuget.dependencyresolver.core\\6.6.1\\nuget.dependencyresolver.core.6.6.1.nupkg.sha512",

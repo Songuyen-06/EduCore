@@ -25,7 +25,7 @@ namespace CourseInfrastructure
                 Include(c => c.SubCategory).ThenInclude(subc => subc.Category).
                 Include(c => c.Sections).ThenInclude(s => s.Lectures).
                   Include(c => c.Reviews).ThenInclude(r => r.Student).
-                     Include(c => c.StudentCourses).ThenInclude(sc => sc.User)
+                     Include(c => c.Enrollments).ThenInclude(e=>e.Student)
                      .ThenInclude(u => u.Role);
         }
         public IQueryable<Course> GetTopSellingCourses()
