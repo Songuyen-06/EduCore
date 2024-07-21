@@ -1,4 +1,5 @@
-﻿using CourseServices;
+﻿using CourseDomain.DTOs;
+using CourseServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
@@ -22,6 +23,52 @@ namespace CourseAPI.Controllers
         {
             var listUser = await _userService.GetListUser();
             return Ok(listUser);
+        }
+        [HttpGet("getUserById")]
+        public async Task<IActionResult> GetUserById(int id)
+        {
+            var user = await _userService.GetUserById(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
+        [HttpPut("updateUser")]
+        public async Task<IActionResult> UpdateUserPartial(int userId, [FromBody] UserDTO userDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            try
+            {
+                await _userService.UpdateUserPartial(userId, userDto);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+        }
+        [HttpPost("addUser")]
+        public async Task<IActionResult> AddUser([FromBody] UserDTO userDto)
+        {
+            await _userService.AddUser(userDto);
+            return Ok();
+        }
+        [HttpDelete("deleteUser")]
+        public async Task<IActionResult> DeleteUser(int userId)
+        {
+            try
+            {
+                await _userService.DeleteUser(userId);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
         }
     }
 }

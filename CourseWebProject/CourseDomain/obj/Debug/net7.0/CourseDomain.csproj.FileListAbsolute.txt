@@ -108,3 +108,25 @@ C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseDomain\obj
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.pdb
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.genruntimeconfig.cache
 C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\ref\CourseDomain.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\CourseDomain.exe
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\CourseDomain.deps.json
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\CourseDomain.runtimeconfig.json
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\CourseDomain.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\CourseDomain.pdb
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.AssemblyInfo.cs
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.sourcelink.json
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDo.BFE2BE10.Up2Date
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\refint\CourseDomain.dll
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.pdb
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\CourseDomain.genruntimeconfig.cache
+C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseDomain\obj\Debug\net7.0\ref\CourseDomain.dll

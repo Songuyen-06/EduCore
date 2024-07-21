@@ -1,0 +1,37 @@
+﻿@page
+@model CourseWeb.Pages.Admin.User.ListUserModel
+@{
+    ViewData["Title"] = "User Index";
+}
+<h1>User Index Page</h1>
+<p>This is the Index page for the User under the Admin section.</p>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Password</th>
+            <th>Bio</th>
+            <th>UrlImage</th>
+            <th>RoleId</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+                <td>@user.Password</td>
+                <td>@user.Bio</td>
+                <td>@user.UrlImage</td>
+                <td>@user.RoleId</td>
+            </tr>
+        }
+    </tbody>
+</table>

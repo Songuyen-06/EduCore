@@ -9,51 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CourseWeb
 build_property.RootNamespace = CourseWeb
-build_property.ProjectDir = C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb\
+build_property.ProjectDir = C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Son\OneDrive\Máy tính\ProjectPRN231\CourseWebProject\CourseWeb
+build_property.MSBuildProjectDirectory = C:\Users\admin\Desktop\project_prn\ProjectPRN231\CourseWebProject\CourseWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Error.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Admin/User/ListUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlclxMaXN0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Home/LoginAndSignup.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Home/LoginAndSignup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVxMb2dpbkFuZFNpZ251cC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Instructor/Index.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Instructor/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5zdHJ1Y3RvclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Privacy.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Student/Course/List.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Student/Course/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxDb3Vyc2VcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Student/Index.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Student/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/_ViewImports.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/_ViewStart.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Son/OneDrive/Máy tính/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Shared/_Layout.cshtml]
+[C:/Users/admin/Desktop/project_prn/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0ihr68h3xv
