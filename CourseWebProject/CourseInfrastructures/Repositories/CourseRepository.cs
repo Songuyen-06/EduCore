@@ -75,8 +75,9 @@ namespace CourseInfrastructure
         }
 
 
-
-
-
+        public async Task<IEnumerable<Course>> GetListCourseByInstructorId(int Id)
+        {
+            return await GetListCourseByInclude().Where(c => c.InstructorId == Id).ToListAsync();
+        }
     }
 }
