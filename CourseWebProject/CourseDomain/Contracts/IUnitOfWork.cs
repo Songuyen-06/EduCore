@@ -16,6 +16,7 @@ namespace CourseDomain
         IStudentCourseRepository StudentCourseRepository { get; }
 
 
+
         IEnrollmentRepository EnrollmentRepository { get; }
 
         ISectionRepository SectionRepository { get; }
