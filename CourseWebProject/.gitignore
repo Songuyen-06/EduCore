@@ -1,4 +1,10 @@
-# Ignore Visual Studio temporary files, build results, and
-# folder config
+# Ignore Visual Studio temporary files and folder config
 .vs/
-*.bin
+
+# Ignore all bin directories
+bin/
+**/bin/
+
+# Ignore all obj directories
+obj/
+**/obj/
