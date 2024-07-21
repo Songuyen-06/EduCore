@@ -21,9 +21,10 @@ namespace CourseServices
         Task UpdateCourse(CourseDTO cDTO, int courseId);
         Task DeleteCourse(Course course);
 
+        Task<List<CourseDTO>>ListCourseByStudentId(int stdId, bool isInCart);
         public Task<List<CourseDetailDTO>> GetTopSellingCourses();
 
         public Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int cateId);
-
+        public Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId);
     }
 }
