@@ -18,8 +18,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\minhd\OneDrive\Desktop\WebCourse\ProjectPRN231\CourseWebProject\CourseWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Course/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlXEluZGV4LmNzaHRtbA==
+[C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Courses/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xBZGRDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Error.cshtml]
@@ -32,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Instructor/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5zdHJ1Y3RvclxBZGRDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/minhd/OneDrive/Desktop/WebCourse/ProjectPRN231/CourseWebProject/CourseWeb/Pages/Instructor/Courses.cshtml]

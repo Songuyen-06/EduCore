@@ -13,11 +13,19 @@ namespace CourseWeb.Services
             _httpClient = httpClient;
         }
 
+        public CourseDTO CreateCourse(CourseDTO course)
+        {
+            return null;
+        }
+
         public async Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId)
         {
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByInstructorId/{instructorId}");
+            response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<List<CourseDTO>>();
         }
+
+       
 
         public async Task<List<CourseDTO>> GetListCoursesByCategoryId(int cateId)
         {          
@@ -61,6 +69,6 @@ namespace CourseWeb.Services
             return await _httpClient.GetAsync($"{_baseAPIRoute}/Course/GetTopSellingCoursesByCateId/{cateId}").Result.Content.ReadFromJsonAsync<List<CourseDTO>>();
         }
 
-       
+        
     }
 }

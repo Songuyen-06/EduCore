@@ -1,5 +1,6 @@
-﻿@page
+﻿@page 
 @model CourseWeb.Pages.Instructor.CoursesModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
     Layout = null;
 }
@@ -190,11 +191,11 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="/Instructor/Courses">Courses</a>
+                                            <a href="/Instructor/Courses/1">Courses</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-product.html">Add New Course</a>
+                                            <a href="/Instructor/AddCourse">Add New Course</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -301,7 +302,7 @@
                                                     <a href="javascript:void(0)">Export</a>
                                                 </li>
                                                 <li>
-                                                    <a class="btn btn-solid" href="add-new-product.html">Add Courses</a>
+                                                    <a class="btn btn-solid" href="/Course/AddCourse">Add Courses</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -323,44 +324,50 @@
                                                 </thead>
 
                                                 <tbody>
-                                                    <tr>
-                                                        <td>Aata Buscuit</td>
+                                                    @foreach(var item in Model.ListCourse){
+                                                        <tr>
+                                                            <td>@item.Title</td>
 
-                                                        <td>Aata Buscuit</td>
+                                                            <td>@item.Duration</td>
 
-                                                        <td>Buscuit</td>
+                                                            <td class="td-price">@item.Price</td>
 
-                                                        <td>12</td>
+                                                            <td>@item.Rating</td>
 
-                                                        <td class="td-price">$95.97</td>
+                                                            <td>@item.SubCategoryName</td>
 
-                                                        <td class="status-danger">
-                                                            <span>Pending</span>
-                                                        </td>
+                                                            <td>@item.UrlImage</td>
 
-                                                        <td>
-                                                            <ul>
-                                                                <li>
-                                                                    <a href="order-detail.html">
-                                                                        <i class="ri-eye-line"></i>
-                                                                    </a>
-                                                                </li>
+                                                            <td>@item.Description</td>
 
-                                                                <li>
-                                                                    <a href="javascript:void(0)">
-                                                                        <i class="ri-pencil-line"></i>
-                                                                    </a>
-                                                                </li>
+                                                            <td class="status-danger">
+                                                                <span>Pending</span>
+                                                            </td>
 
-                                                                <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                       data-bs-target="#exampleModalToggle">
-                                                                        <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
+                                                            <td>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="order-detail.html">
+                                                                            <i class="ri-eye-line"></i>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href="javascript:void(0)">
+                                                                            <i class="ri-pencil-line"></i>
+                                                                        </a>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                           data-bs-target="#exampleModalToggle">
+                                                                            <i class="ri-delete-bin-line"></i>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr>
+                                                    }
                                                 </tbody>
                                             </table>
                                         </div>

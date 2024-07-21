@@ -74,7 +74,8 @@ namespace CourseInfrastructure
             return await _entitySet.AnyAsync(c => c.CourseId == courseId);
         }
 
-        public async Task<IEnumerable<Course>> GetListCourseByIntructorId(int Id)
+
+        public async Task<IEnumerable<Course>> GetListCourseByInstructorId(int Id)
         {
             return await GetListCourseByInclude().Where(c => c.InstructorId == Id).ToListAsync();
         }

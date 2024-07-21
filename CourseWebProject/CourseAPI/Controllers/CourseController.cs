@@ -85,7 +85,7 @@ namespace CourseAPI.Controllers
 
 
         [HttpPost("addCourse")]
-        public async Task<IActionResult> AddCourse([FromBody] PartialCourseDTO cDTO)
+        public async Task<IActionResult> AddCourse([FromForm] PartialCourseDTO cDTO)
         {
             await _courseService.AddCourse(cDTO);
 

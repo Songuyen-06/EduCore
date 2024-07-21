@@ -12,6 +12,6 @@ namespace CourseWeb.Services
         public Task<List<CourseDTO>> GetTopSellingCoursesByCateId(int? cateId);
 
         public Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId);
-
+         public CourseDTO CreateCourse(CourseDTO course);
     }
 }

@@ -1,4 +1,4 @@
-﻿@page
+﻿@page 
 @model CourseWeb.Pages.Instructor.IndexModel
 @{
     Layout = null;
@@ -197,11 +197,11 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="/Instructor/Courses">Courses</a>
+                                            <a href="/Instructor/Courses?instructorId=@Model.instructorId">Courses</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-product.html">Add New Course</a>
+                                            <a href="/Instructor/AddCourse">Add New Course</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -302,7 +302,7 @@
                                         <div class="media-body p-0">
                                             <span class="m-0">Total Course</span>
                                             <h4 class="mb-0 counter">
-                                                $6659
+                                                @Model.TotalCourse
                                                 <span class="badge badge-light-primary grow">
                                                     <i data-feather="trending-up"></i>8.5%
                                                 </span>
@@ -323,7 +323,7 @@
                                         <div class="media-body p-0">
                                             <span class="m-0">Total Student</span>
                                             <h4 class="mb-0 counter">
-                                                9856
+                                                @Model.TotalStudent
                                                 <span class="badge badge-light-danger grow">
                                                     <i data-feather="trending-down"></i>8.5%
                                                 </span>
@@ -331,50 +331,6 @@
                                         </div>
                                         <div class="align-self-center text-center">
                                             <i class="ri-shopping-bag-3-line"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xxl-3 col-lg-6">
-                            <div class="main-tiles border-5 card-hover border-0  card o-hidden">
-                                <div class="custome-3-bg b-r-4 card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body p-0">
-                                            <span class="m-0">Total Products</span>
-                                            <h4 class="mb-0 counter">
-                                                893
-                                                <a href="add-new-product.html" class="badge badge-light-secondary grow">
-                                                    ADD NEW
-                                                </a>
-                                            </h4>
-                                        </div>
-
-                                        <div class="align-self-center text-center">
-                                            <i class="ri-chat-3-line"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-6 col-xxl-3 col-lg-6">
-                            <div class="main-tiles border-5 card-hover border-0 card o-hidden">
-                                <div class="custome-4-bg b-r-4 card-body">
-                                    <div class="media static-top-widget">
-                                        <div class="media-body p-0">
-                                            <span class="m-0">Total Customers</span>
-                                            <h4 class="mb-0 counter">
-                                                4.6k
-                                                <span class="badge badge-light-success grow">
-                                                    <i data-feather="trending-down"></i>8.5%
-                                                </span>
-                                            </h4>
-                                        </div>
-
-                                        <div class="align-self-center text-center">
-                                            <i class="ri-user-add-line"></i>
                                         </div>
                                     </div>
                                 </div>
