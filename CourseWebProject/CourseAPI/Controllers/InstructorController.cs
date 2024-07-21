@@ -26,7 +26,7 @@ namespace CourseAPI.Controllers
         public async Task<IActionResult> GetInstructorDetailById(int instructorId)
         {
 
-            return Ok(await instructorService.GetListInstructor());
+            return Ok(await instructorService.GetInstructorDetailById(instructorId));
         }
     }
 }

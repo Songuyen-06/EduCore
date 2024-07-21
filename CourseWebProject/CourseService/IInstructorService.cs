@@ -10,5 +10,7 @@ namespace CourseServices
     public  interface IInstructorService
     {
         public Task<IEnumerable<InstructorDTO>> GetListInstructor();
+        public Task<InstructorDetailDTO> GetInstructorDetailById(int instructorId);
+
     }
 }

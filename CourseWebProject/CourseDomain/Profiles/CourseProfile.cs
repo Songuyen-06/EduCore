@@ -27,7 +27,7 @@ public class CourseProfile : Profile
             .ForMember(dest => dest.InstructorName, opt => opt.MapFrom(src => src.Instructor.FullName))
             .ForMember(dest => dest.SubCategoryName, opt => opt.MapFrom(src => src.SubCategory.Name))
             .ForMember(dest => dest.RatingNumber, opt => opt.MapFrom(src => src.Reviews.Count()))
-            .ForMember(dest => dest.StudentNumber, opt => opt.MapFrom(src => src.StudentCourses.Count))
+            .ForMember(dest => dest.StudentNumber, opt => opt.MapFrom(src => src.Enrollments.Count))
             .ForMember(dest => dest.SectionNumber, opt => opt.MapFrom(src => src.Sections.Count))
             .ForMember(dest => dest.LectureNumber, opt => opt.MapFrom(src => src.Sections.Sum(s => s.Lectures.Count)))    
         .ReverseMap();

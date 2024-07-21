@@ -14,6 +14,7 @@ namespace CourseDomain.DTOs
 
         public string StudentName { get; set; }
 
+        public string UrlImgStudent {  get; set; }  
         public string CourseName {  get; set; }
         public decimal Rating { get; set; }
 
