@@ -19,12 +19,27 @@ namespace CourseWeb.Services
 
         public async Task<UserDTO> GetUserByEmailAndPassword(UserDTO u)
         {
-            var res = _httpClient.GetAsync($"{_baseAPIRoute}/User?$filter=email eq {u.Email} and password eq {u.Password}").Result;
-            if (res.IsSuccessStatusCode)
+            try
             {
-                return await res.Content.ReadFromJsonAsync<UserDTO>();
+                // Make the asynchronous GET request
+                var response = await _httpClient.GetAsync($"{_baseAPIRoute}/User/getListUser?$filter=email eq '{u.Email}' and password eq '{u.Password}'");
+
+                // Ensure the request was successful
+                if (response.IsSuccessStatusCode)
+                {
+                    var user = await response.Content.ReadFromJsonAsync<List<UserDTO>>();
+                    return user.FirstOrDefault();
+                }
+                else
+                {
+                    return null;
+                }
             }
-            return null;
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
+
     }
 }

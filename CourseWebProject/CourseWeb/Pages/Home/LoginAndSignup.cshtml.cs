@@ -3,6 +3,7 @@ using CourseWeb.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
+using System.Diagnostics;
 using System.Threading.Tasks;
 
 namespace CourseWeb.Pages.Home
@@ -31,7 +32,7 @@ namespace CourseWeb.Pages.Home
             return RedirectToPage("/Home");
         }
 
-        public async Task<IActionResult> OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
@@ -43,8 +44,22 @@ namespace CourseWeb.Pages.Home
             if (user != null)
             {
                 var userJson = JsonConvert.SerializeObject(user);
-                HttpContext.Session.SetString("User", userJson);
-                return Redirect("/Home");
+
+                switch (user.RoleId)
+                {
+                    case 1: // Student
+                        HttpContext.Session.SetString("Student", userJson);
+                        return RedirectToPage("/Student/Index");
+                    case 2: // Admin
+                        HttpContext.Session.SetString("Admin", userJson);
+                        return RedirectToPage("/Admin");
+                    case 3: // Instructor
+                        HttpContext.Session.SetString("Instructor", userJson);
+                        return RedirectToPage("/Instructor");
+                    default:
+                        LoginError = "Invalid role!";
+                        return Page();
+                }
             }
             else
             {
@@ -52,6 +67,7 @@ namespace CourseWeb.Pages.Home
                 return Page();
             }
         }
+
 
         public async Task<IActionResult> OnPostSignup()
         {
