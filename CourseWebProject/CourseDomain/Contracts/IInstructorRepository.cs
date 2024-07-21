@@ -10,5 +10,7 @@ namespace CourseDomain.Contracts
     public interface IInstructorRepository : IGenericRepository<User>
     {
         public IQueryable<User> GetListInstructor();
+        public Task<User> GetInstructorDetailById(int instructorId);
+
     }
 }

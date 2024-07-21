@@ -1,37 +1,44 @@
-
-
-using CourseWeb.Services;
+﻿using CourseWeb.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<ICourseService, CourseService>();
-
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<IInstructorService, InstructorService>();
+builder.Services.AddScoped<ICertificateService, CertificateService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
-
+// Configure session services
+builder.Services.AddDistributedMemoryCache(); // Provides distributed memory cache for session storage
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); // Session timeout period
+    options.Cookie.HttpOnly = true; // Session cookie can only be accessed via HTTP
+    options.Cookie.IsEssential = true; // Session cookie is essential for the application
+});
 
 builder.Services.AddHttpClient();
-var app = builder.Build();
 
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
-    app.MapGet("/", () => "dsds");
-
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// Ensure session middleware is added before authorization and other middlewares
+app.UseSession();
 
 app.UseAuthorization();
 

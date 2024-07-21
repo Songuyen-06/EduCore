@@ -33,6 +33,8 @@ public partial class Course
 
     public virtual SubCategory? SubCategory { get; set; }
 
+
+
     public virtual ICollection<Checkout> Checkouts { get; set; } = new List<Checkout>();
 
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();

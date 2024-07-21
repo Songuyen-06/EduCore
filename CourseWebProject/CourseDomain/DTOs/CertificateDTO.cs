@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
+using System.ComponentModel.DataAnnotations;
 
 namespace CourseDomain.DTOs
 {
     public  class CertificateDTO
     {
+        [Key]
         [JsonPropertyOrder(0)]
         public int CertificateId { get; set; }
 

@@ -6,6 +6,10 @@
     Layout = "../Shared/_Layout.cshtml";
     var categoryList = ViewData["Categories"] as List<CategoryDTO>;
     var cateId = (int?)ViewData["CateId"];
+    var numberCourses = (int?)ViewData["NumberCourses"];
+    var numberCertificates = (int?)ViewData["NumberCertificates"];
+    var numberStudents = (int?)ViewData["NumberStudents"];
+
 }
 
 <!DOCTYPE html>
@@ -41,7 +45,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-7 d-block d-md-none d-lg-block p-5">
-                    <img src="images/billboard-img.jpg" alt="img" class="img-fluid">
+                    <img src="../images/billboard-img.jpg" alt="img" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -156,7 +160,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-6 ">
-                    <img src="images/register-img.png" alt="img" class="img-fluid">
+                    <img src="../images/register-img.png" alt="img" class="img-fluid">
                 </div>
                 <div class="col-md-4 ">
                     <div class="mb-5 mt-5 mt-lg-0">
@@ -297,41 +301,41 @@
 
 
 
-    <section id="achivement" style="background-color: #f5f5f5;">
+    <section id="achievement" style="background-color: #f5f5f5;">
         <div class="container padding-medium">
             <div class="row">
                 <div class="col-md-3">
                     <div class="text-center">
-                        <img src="images/topic.png" alt="img" class="img-fluid">
-                        <h4 class="py-2 mt-3 m-0">300+ Courses</h4>
+                        <img src="../images/topic.png" alt="img" class="img-fluid">
+                        <h4 class="py-2 mt-3 m-0">@numberCourses+ Courses</h4>
                         <p class="text-uppercase">choose your choice</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
-                        <img src="images/student.png" alt="img" class="img-fluid">
-                        <h4 class="py-2 mt-3 m-0">1000+ Students</h4>
+                        <img src="../images/student.png" alt="img" class="img-fluid">
+                        <h4 class="py-2 mt-3 m-0">@numberStudents+ Students</h4>
                         <p class="text-uppercase">bright future</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
-                        <img src="images/instruction.png" alt="img" class="img-fluid">
-                        <h4 class="py-2 mt-3 m-0">300+ Instructors</h4>
+                        <img src="../images/instruction.png" alt="img" class="img-fluid">
+                        <h4 class="py-2 mt-3 m-0">@Model.Instructors.Count Instructors</h4>
                         <p class="text-uppercase">trained professionals</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="text-center">
-                        <img src="images/award.png" alt="img" class="img-fluid">
-                        <h4 class="py-2 mt-3 m-0">120+ Awards</h4>
+                        <img src="../images/award.png" alt="img" class="img-fluid">
+                        <h4 class="py-2 mt-3 m-0">@numberCertificates+ Certificates</h4>
                         <p class="text-uppercase">hard process</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <div class="container-fluid vesitable py-5">
         <div class="container py-5">
@@ -411,7 +415,7 @@
  *@
 
 
-    <section id="testimonial" style="background-image:url(images/background-img.jpg); background-repeat: no-repeat; ">
+    <section id="testimonial" style="background-image:url(../images/background-img.jpg); background-repeat: no-repeat; ">
         <div class="container padding-medium">
             <div class="text-center">
                 <h2 class="display-5 fw-semibold">see what our <span class="text-primary"> learners say</span></h2>
@@ -425,7 +429,7 @@
                             {
                                 <div class="swiper-slide">
                                     <div class="text-center my-4">
-                                        <img src="images/reviewer-1.jpg" alt="img" class="img-fluid rounded-circle">
+                                        <img src="@r.UrlImgStudent" alt="img" class="img-fluid rounded-circle">
                                         <h5 class="m-0 mt-2">@r.StudentName</h5>
                                         <p class="text-muted">@r.CourseName</p>
                                         <span class="rating  mb-2">
