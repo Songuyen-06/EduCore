@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2adF1ZhoCNhjWL7SaBIAWV3JToZrw6HiQDszHdxQb2viVaoJhphfAwg57MOYaNbBqsvH12DehjHFlsk+DBTPmg==",
+  "dgSpecHash": "LSTZlby9756k+jUmhjRjwBngemFzXlu3WGajDSFnNuM5fSpgmgImSv9kERy9b+WOnMJM3bpybqqC0LMsjRyuFg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\CourseWebProject\\CourseService\\CourseServices.csproj",
+  "projectFilePath": "C:\\Users\\Son\\OneDrive\\Máy tính\\ProjectPRN231\\ProjectPRN231\\CourseWebProject\\CourseService\\CourseServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Son\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Son\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
