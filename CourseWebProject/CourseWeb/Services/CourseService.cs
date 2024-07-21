@@ -27,7 +27,7 @@ namespace CourseWeb.Services
 
         public async Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId)
         {
-            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByInstructorId/{instructorId}");
+            var response = await _httpClient.GetAsync($"https://localhost:7004/getListCourseByInstructorId/{instructorId}");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<List<CourseDTO>>();
         }
