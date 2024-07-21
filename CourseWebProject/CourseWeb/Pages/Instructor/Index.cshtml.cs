@@ -9,6 +9,8 @@ namespace CourseWeb.Pages.Instructor
     {
         private readonly ICourseService _courseService;
 
+        private readonly IStudentService _stService;
+
         [BindProperty]
         public int TotalCourse { get; set; }
 
@@ -17,15 +19,16 @@ namespace CourseWeb.Pages.Instructor
 
         [BindProperty]
         public int instructorId { get; set; }
-        public IndexModel(ICourseService courseService)
+        public IndexModel(ICourseService courseService,IStudentService studentService)
         {
             _courseService = courseService;
+            _stService = studentService;
         }
         public async Task OnGetAsync()
         {
             var courses = await _courseService.GetListCourseByInstructorId(2);
             TotalCourse = courses.Count;
-            TotalStudent = (int)courses.Sum(course => course.StudentNumber);
+            TotalStudent = await _stService.GetNumberStudents();
             instructorId = 2;
         }
     }

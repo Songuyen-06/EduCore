@@ -3,6 +3,7 @@ using CourseDomain.DTOs;
 using CourseWeb.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 using System.Net.Http.Json;
 
 namespace CourseWeb.Pages.Student
@@ -33,6 +34,7 @@ namespace CourseWeb.Pages.Student
         [BindProperty]
         public List<ReviewDTO> Reviews { get; set; }
 
+       
         public IndexModel(ILogger<IndexModel> logger, ICategoryService categoryService, ICourseService courseService, IReviewService reviewService, IInstructorService instructorService,ICertificateService certificateService,IStudentService studentService)
         {
             _logger = logger;
@@ -46,7 +48,11 @@ namespace CourseWeb.Pages.Student
 
         public async Task OnGetAsync(int? cateId)
         {
-
+            var userJson = HttpContext.Session.GetString("Student");
+            if (userJson != null)
+            {
+               ViewData["Student"] = JsonConvert.DeserializeObject<UserDTO>(userJson);
+            }
             ViewData["Categories"] = await _categoryService.GetListCategory();
             TopSellingCourses = cateId != null ? await _courseService.GetTopSellingCoursesByCateId(cateId) : await _courseService.GetTopSellingCourses();
             Reviews = await _reviewService.GetListReview();
@@ -55,7 +61,7 @@ namespace CourseWeb.Pages.Student
             ViewData["NumberStudents"]=await _studentService.GetNumberStudents();
             ViewData["NumberCertificates"]=await _certificateService.GetNumberCertificates();
             ViewData["NumberCourses"]=await _courseService.GetNumberCourses();
-
+          
         }
     }
 }

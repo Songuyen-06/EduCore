@@ -42,6 +42,7 @@
 <body>
     @{
         var categories = ViewData["Categories"] as List<CategoryDTO>;
+        var student = ViewData["Student"] as UserDTO;
 
 
     }
@@ -182,10 +183,16 @@
                                     <div class="d-none d-lg-flex align-items-center ms-5">
                                         <ul class="d-flex justify-content-end  list-unstyled m-0">
                                             <li>
-                                                <form id="loginForm" action="/Home/LoginAndSignup">
-                                                    <button type="submit" class="btn btn-outline-dark mx-3 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</button>
-                                                </form>
-
+                                                @if (student == null)
+                                                {
+                                                    <form id="loginForm" action="/Home/LoginAndSignup">
+                                                        <button type="submit" class="btn btn-outline-dark mx-3 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</button>
+                                                    </form>
+                                                }else{
+                                                    <form id="logoutForm" action="/Home/LoginAndSignup">
+                                                        <button type="submit" class="btn btn-outline-dark mx-3 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</button>
+                                                    </form>
+                                                }
                                             </li>
 
                                          
