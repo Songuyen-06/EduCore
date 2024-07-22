@@ -1,4 +1,0 @@
-# Ignore Visual Studio temporary files, build results, and
-# folder config
-.vs/
-*.bin
