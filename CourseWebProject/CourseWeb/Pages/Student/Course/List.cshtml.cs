@@ -42,7 +42,7 @@ namespace CourseWeb.Pages.Student.Course
 
                 ViewData["CateId"] = cateId;
                 ViewData["SubCateId"] = subCateId;
-                ViewData["Categories"] = await _categoryService.GetListCategory();
+              ViewData["Categories"] = await _categoryService.GetListCategory();
 
             }
             catch (HttpRequestException ex)
