@@ -1,4 +1,7 @@
 ﻿@using CourseDomain.DTOs
+@using CourseWeb.Services
+@using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,9 +46,14 @@
 <body>
     @{
         var categories = ViewData["Categories"] as List<CategoryDTO>;
-        var student = ViewData["Student"] as UserDTO;
-
-
+        var numberCourseInCart = (int?)ViewData["NumberCourseCart"];
+        var userJson = HttpContextAccessor.HttpContext?.Session?.GetString("User");
+        UserDTO? student = null;
+        if (!string.IsNullOrEmpty(userJson))
+        {                
+             student = JsonConvert.DeserializeObject<UserDTO>(userJson);
+        }
+       
     }
     <style>
 
@@ -127,8 +135,8 @@
                                                 }
                                             </ul>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a asp-page="/Student/Instructor" class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="instructors" data-bs-toggle="dropdown" aria-expanded="false">Instructors</a>
+                                        <li class="nav-item ">
+                                            <a asp-page="/Student/Instructor/List" class="nav-link mx-2  align-items-center" >Instructors</a>
                                            @*  <ul class="dropdown-menu" aria-labelledby="courses">
                                                 <li>
                                                     <a href="event.html" class="dropdown-item">
@@ -202,11 +210,10 @@
                                                 </li>
 
                                                 <li class="align-self-end">
-                                                    <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                                                       aria-controls="offcanvasCart">
+                                                    <a href="/Student/Cart/List" >
                                                         <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
                                                         <span class="position-absolute text-black translate-middle badge rounded-circle bg-primary">
-                                                            03
+                                                           @numberCourseInCart
                                                         </span>
                                                     </a>
                                                 </li>

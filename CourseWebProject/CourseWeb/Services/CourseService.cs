@@ -96,5 +96,12 @@ namespace CourseWeb.Services
         }
 
 
+        public async Task<List<CourseDetailDTO>> GetListCourseByStudentId(int stId,bool isInCart)
+        {
+            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByStudentId/{stId}/{isInCart}");
+            response.EnsureSuccessStatusCode();
+            return await response.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
+        }
+
     }
 }

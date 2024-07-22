@@ -51,7 +51,8 @@ namespace CourseWeb.Pages.Student
             var userJson = HttpContext.Session.GetString("User");
             if (userJson != null)
             {
-                ViewData["Student"] = JsonConvert.DeserializeObject<UserDTO>(userJson);
+                var u= JsonConvert.DeserializeObject<UserDTO>(userJson);             
+                ViewData["NumberCourseCart"] = (await _courseService.GetListCourseByStudentId(u.UserId, true)).Count();
             }
             ViewData["Categories"] = await _categoryService.GetListCategory();
             TopSellingCourses = cateId != null ? await _courseService.GetTopSellingCoursesByCateId(cateId) : await _courseService.GetTopSellingCourses();
