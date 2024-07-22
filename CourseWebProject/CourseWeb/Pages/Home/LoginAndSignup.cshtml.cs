@@ -51,9 +51,9 @@ namespace CourseWeb.Pages.Home
                     case 1: // Student
                         return RedirectToPage("/Student/Index");
                     case 2: // Admin
-                        return RedirectToPage("/Admin");
+                        return RedirectToPage("/Admin/Index");
                     case 3: // Instructor
-                        return RedirectToPage("/Instructor");
+                        return RedirectToPage("/Instructor/Index");
                     default:
                         LoginError = "Invalid role!";
                         return Page();

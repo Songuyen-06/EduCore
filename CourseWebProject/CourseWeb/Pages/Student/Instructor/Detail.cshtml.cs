@@ -2,6 +2,7 @@ using CourseDomain.DTOs;
 using CourseWeb.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Newtonsoft.Json;
 
 namespace CourseWeb.Pages.Student.Instructor
 {
@@ -25,6 +26,12 @@ namespace CourseWeb.Pages.Student.Instructor
           public List<CourseDetailDTO>   RelatedCourses {  get; set; }
         public async Task<IActionResult> OnGetAsync(int insId)
         {
+            var userJson = HttpContext.Session.GetString("User");
+            if (userJson != null)
+            {
+                var u = JsonConvert.DeserializeObject<UserDTO>(userJson);
+                ViewData["NumberCourseCart"] = (await _courseService.GetListCourseByStudentId(u.UserId, true)).Count();
+            }
             InstructorDetail = await _instructorService.GetInstructorDetailById(insId);
             RelatedCourses= await _courseService.GetListRelatedCourseBySubcates(InstructorDetail.SubCategoryDetails);
             ViewData["Categories"] = await categoryService.GetListCategory();

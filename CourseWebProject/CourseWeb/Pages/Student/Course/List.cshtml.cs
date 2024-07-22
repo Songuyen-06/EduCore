@@ -8,6 +8,7 @@ using CourseWeb.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 namespace CourseWeb.Pages.Student.Course
 {
@@ -33,7 +34,13 @@ namespace CourseWeb.Pages.Student.Course
         {
             try
             {
-                          
+                var userJson = HttpContext.Session.GetString("User");
+                if (userJson != null)
+                {
+                    var u = JsonConvert.DeserializeObject<UserDTO>(userJson);
+                    ViewData["NumberCourseCart"] = (await _courseService.GetListCourseByStudentId(u.UserId, true)).Count();
+                }
+
                 Courses = subCateId!=null?await _courseService.GetListCoursesBySubCategoryId(subCateId): await _courseService.GetListCoursesByCategoryId(cateId);
 
 

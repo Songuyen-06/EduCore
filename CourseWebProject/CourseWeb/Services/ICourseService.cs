@@ -18,6 +18,7 @@ namespace CourseWeb.Services
 
         public Task<List<CourseDetailDTO>> GetListRelatedCourseBySubcates(List<SubCategoryDetailDTO> subCategories);
 
+        Task<List<CourseDetailDTO>> GetListCourseByStudentId(int stdId, bool isInCart);
 
     }
 }
