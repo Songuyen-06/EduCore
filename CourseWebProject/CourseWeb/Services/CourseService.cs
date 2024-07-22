@@ -18,11 +18,11 @@ namespace CourseWeb.Services
             return null;
         }
 
-        public async Task<CourseDTO> getCourseByCourseId(int courseId)
+        public async Task<CourseDetailDTO> getCourseDetailByCourseId(int courseId)
         {
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getCourseByCourseId/{courseId}");
             response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<CourseDTO>();
+            return await response.Content.ReadFromJsonAsync<CourseDetailDTO>();
         }
 
         public async Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId)
@@ -32,11 +32,11 @@ namespace CourseWeb.Services
             return await response.Content.ReadFromJsonAsync<List<CourseDTO>>();
         }
 
-       
+
 
         public async Task<List<CourseDetailDTO>> GetListCoursesByCategoryId(int cateId)
-        {          
-          
+        {
+
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseByCategoryId/{cateId}");
             response.EnsureSuccessStatusCode();
 
@@ -51,18 +51,33 @@ namespace CourseWeb.Services
 
         public async Task<List<CourseDetailDTO>> GetListCoursesBySubCategoryId(int? subCateId)
         {
-           
+
             var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getListCourseBySubCategoryId/{subCateId}");
             response.EnsureSuccessStatusCode();
 
             return await response.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
         }
 
+        public async Task<List<CourseDetailDTO>> GetListRelatedCourseBySubcates(List<SubCategoryDetailDTO> subCategories)
+        {
+            var allCourses = new List<CourseDetailDTO>();
 
-        
+            foreach (var sub in subCategories)
+            {
+                var courses = await GetListCoursesBySubCategoryId(sub.SubCategoryId);
+                if (courses != null)
+                {
+                    allCourses.AddRange(courses);
+                }
+            }
+
+            return allCourses;
+        }
+
+
 
         public int GetNumberPageCourse(int numberCourse)
-        {            
+        {
             var numberPage = numberCourse / 8;
             if (numberCourse % 8 != 0)
             {
@@ -80,6 +95,6 @@ namespace CourseWeb.Services
             return await _httpClient.GetAsync($"{_baseAPIRoute}/Course/GetTopSellingCoursesByCateId/{cateId}").Result.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
         }
 
-        
+
     }
 }

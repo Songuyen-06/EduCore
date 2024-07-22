@@ -548,18 +548,25 @@
                                         <div class="position-absolute m-3">
                                             <span class="badge text-muted bg-primary">@course.Duration</span>
                                         </div>
-                                        <a href="courses-details.html">
-                                            <img src="@course.Url" class="w-100 img-fluid rounded-3" alt="image">
-                                        </a>
+                                    <a href="/Student/Course/Detail?cId=@course.CourseId">
+                                        <img src="@course.Url" class="w-100 img-fluid rounded-3" alt="image">
+                                    </a>
                                     </div>
                                     <div class="card-body p-0">
                                         <div class=" mt-3 mb-1">
                                             <span class="badge text-muted bg-success d-inline">@course.Level</span>
                                             <span class="badge text-muted bg-success d-inline">@course.SectionNumber section</span>
                                             <span class="badge text-muted bg-success d-inline">@course.LectureNumber lecture </span>
-                                        </div>                                        <a href="courses-details.html">
-                                            <h5 class="py-2 m-0">@course.Title-@course.InstructorName</h5>
-                                        </a>
+                                        </div>                                       
+                                        <h5 class="py-2 m-0">
+                                            @course.Title-
+                                            <a href="/Student/Instructor/Detail?insId=@course.InstructorId">
+                                                <span class="text-primary">
+                                                    @course.InstructorName
+                                                </span>
+                                                <a />
+                                        </h5>
+                                   
                                         <div class="card-text">
                                             <span class="rating d-flex align-items-center mb-2">
                                                 <h6 class="text-primary m-0 me-2">@course.Rating</h6>
