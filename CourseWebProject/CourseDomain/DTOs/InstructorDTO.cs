@@ -19,7 +19,7 @@ namespace CourseDomain.DTOs
         public int NumberCourse {  get; set; }
 
         [JsonPropertyOrder(12)]
-        public List<SubCategoryDTO> SubCategories {  get; set; }
+        public List<SubCategoryDetailDTO > SubCategoryDetails {  get; set; }
 
 
     }

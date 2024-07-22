@@ -6,7 +6,6 @@ namespace CourseWeb.Services
     {
         public Task<List<CourseDetailDTO>> GetListCoursesByCategoryId(int cateId);
         public  Task<List<CourseDetailDTO>> GetListCoursesBySubCategoryId(int? subCateId);
-        public int GetNumberPageCourse(int cateId);
 
         public Task<List<CourseDetailDTO>> GetTopSellingCourses();
         public Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int? cateId);
@@ -15,6 +14,7 @@ namespace CourseWeb.Services
         public Task<int> GetNumberCourses();
         public Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId);
 
+        public int GetNumberPageCourse(int numberCourse);
 
     }
 }

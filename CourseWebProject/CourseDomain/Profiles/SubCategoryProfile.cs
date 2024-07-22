@@ -18,6 +18,11 @@ namespace CourseDomain.Profiles
                 .ForMember(dest => dest.SubCategoryId, opt => opt.MapFrom(opt => opt.SubCategoryId))
                  .ForMember(dest => dest.SubCategoryName, opt => opt.MapFrom(opt => opt.Name)).ReverseMap();
 
+            CreateMap<SubCategory, SubCategoryDetailDTO >()
+                .IncludeBase<SubCategory, SubCategoryDTO>()
+              .ForMember(dest => dest.CategoryId, opt => opt.MapFrom(opt => opt.Category.CategoryId))
+               .ForMember(dest => dest.CategoryName, opt => opt.MapFrom(opt => opt.Category.Name))
+                        .ReverseMap();
         }
     }
 }
