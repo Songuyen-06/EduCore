@@ -5,6 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<ISectionService, SectionService>();
+builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
+
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<IReviewService, ReviewService>();
 builder.Services.AddScoped<IInstructorService, InstructorService>();
