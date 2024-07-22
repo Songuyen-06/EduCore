@@ -143,5 +143,10 @@ namespace CourseServices
         {
             return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseByInstructorId(instructorId));
         }
+
+        public Task<List<CourseDTO>> ListCourseByStudentId(int stdId, bool isInCart)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
