@@ -44,17 +44,15 @@ namespace CourseWeb.Pages.Home
             if (user != null)
             {
                 var userJson = JsonConvert.SerializeObject(user);
+                HttpContext.Session.SetString("User", userJson);
 
                 switch (user.RoleId)
                 {
                     case 1: // Student
-                        HttpContext.Session.SetString("Student", userJson);
                         return RedirectToPage("/Student/Index");
                     case 2: // Admin
-                        HttpContext.Session.SetString("Admin", userJson);
                         return RedirectToPage("/Admin");
                     case 3: // Instructor
-                        HttpContext.Session.SetString("Instructor", userJson);
                         return RedirectToPage("/Instructor");
                     default:
                         LoginError = "Invalid role!";
@@ -76,10 +74,6 @@ namespace CourseWeb.Pages.Home
             return RedirectToPage("/Home/Index");
         }
 
-        public IActionResult OnGetLogout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToPage("/Home/Index");
-        }
+        
     }
 }

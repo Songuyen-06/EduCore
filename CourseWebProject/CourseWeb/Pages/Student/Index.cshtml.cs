@@ -48,10 +48,10 @@ namespace CourseWeb.Pages.Student
 
         public async Task OnGetAsync(int? cateId)
         {
-            var userJson = HttpContext.Session.GetString("Student");
+            var userJson = HttpContext.Session.GetString("User");
             if (userJson != null)
             {
-               ViewData["Student"] = JsonConvert.DeserializeObject<UserDTO>(userJson);
+                ViewData["Student"] = JsonConvert.DeserializeObject<UserDTO>(userJson);
             }
             ViewData["Categories"] = await _categoryService.GetListCategory();
             TopSellingCourses = cateId != null ? await _courseService.GetTopSellingCoursesByCateId(cateId) : await _courseService.GetTopSellingCourses();

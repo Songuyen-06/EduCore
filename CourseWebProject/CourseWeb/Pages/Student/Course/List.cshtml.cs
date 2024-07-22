@@ -20,8 +20,7 @@ namespace CourseWeb.Pages.Student.Course
         [BindProperty]
         public List<CourseDetailDTO> Courses { get; set; }
 
-        //[BindProperty]
-        //public List<SubCategoryDTO> SubCategories { get; set; }
+       
 
         public ListModel(ILogger<ListModel> logger, ICourseService courseService, ICategoryService categoryService)
         {

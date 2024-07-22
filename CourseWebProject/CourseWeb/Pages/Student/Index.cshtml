@@ -1,5 +1,6 @@
 ﻿@page
 @using CourseDomain.DTOs
+@using Newtonsoft.Json
 @model CourseWeb.Pages.Student.IndexModel
 @{
 
@@ -10,6 +11,8 @@
     var numberCertificates = (int?)ViewData["NumberCertificates"];
     var numberStudents = (int?)ViewData["NumberStudents"];
     var student = ViewData["Student"] as UserDTO;
+
+   
 }
 
 <!DOCTYPE html>
@@ -356,7 +359,7 @@
                             <h4>@i.FullName</h4>
  
                                 <span>
-                                    @i.SubCategories.Select(sc => sc.SubCategoryName).Aggregate((s1, s2) => s1 + ", " + s2)                                
+                                    @i.SubCategoryDetails.Select(sc => sc.SubCategoryName).Aggregate((s1, s2) => s1 + ", " + s2)                                
                                 </span>
                            
 
