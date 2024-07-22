@@ -12,18 +12,23 @@ namespace CourseWeb.Services
         {
             _httpClient = httpClient;
         }
-        public Task<List<InstructorDTO>> GetListInstructorByFilter(int cateId, int? subCateId)
+        public async Task<List<InstructorDTO>> GetListInstructorByFilter(int cateId, int? subCateId)
         {
             var route = subCateId.HasValue ? $"subCategoryId eq {subCateId}" : $"categoryId eq {cateId}";
-            return _httpClient.GetAsync($"{_baseAPIRoute}/Instructor/getListInstructor?$filter=subCategoryDetails/any(s: s/{route})").Result.Content.ReadFromJsonAsync<List<InstructorDTO>>();
+            return await _httpClient.GetAsync($"{_baseAPIRoute}/Instructor/getListInstructor?$filter=subCategoryDetails/any(s: s/{route})").Result.Content.ReadFromJsonAsync<List<InstructorDTO>>();
+
+
+        }
+        public async Task<InstructorDetailDTO> GetInstructorDetailById(int id)
+        {
+            return await _httpClient.GetAsync($"{_baseAPIRoute}/Instructor/getInstructorDetailById/{id}").Result.Content.ReadFromJsonAsync<InstructorDetailDTO>();
 
 
         }
 
-
-        public Task<List<InstructorDTO>> GetListInstructor()
+        public async  Task<List<InstructorDTO>> GetListInstructor()
         {
-            return _httpClient.GetAsync($"{_baseAPIRoute}/Instructor/getListInstructor").Result.Content.ReadFromJsonAsync<List<InstructorDTO>>();
+            return await  _httpClient.GetAsync($"{_baseAPIRoute}/Instructor/getListInstructor").Result.Content.ReadFromJsonAsync<List<InstructorDTO>>();
         }
         public async Task<int> GetNumberInstructors()
         {

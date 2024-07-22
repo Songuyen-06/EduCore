@@ -490,6 +490,8 @@
                 <div class="row " id="courses_content">
                     @foreach (var i in @Model.Instructors)
                     {
+                           <a href="/Student/Instructor/Detail?insId=@i.UserId">
+
                         <div class="m-2 p-2 col-md-3 col-sm-6 my-3 shadow-lg  rounded position-relative vesitable-item">
                             <div class="vesitable-img">
                                 <img src="@i.UrlImage" class="img-fluid w-100 rounded" alt="">
@@ -519,6 +521,7 @@
                                 </div>
                             </div>
                         </div>
+                        </a>
                     }
                     <div class="pagination d-flex justify-content-center align-items-center">
                         @for (int i = 1; i <= numberPage; i++)

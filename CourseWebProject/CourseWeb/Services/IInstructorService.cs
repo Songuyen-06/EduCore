@@ -9,6 +9,8 @@ namespace CourseWeb.Services
         public Task<List<InstructorDTO>> GetListInstructorByFilter(int cateId, int? subCateId);
         public Task<int> GetNumberInstructors();
         public int GetNumberPageInstructor(int numberInstructor);
+        public Task<InstructorDetailDTO> GetInstructorDetailById(int id);
+
 
     }
 }
