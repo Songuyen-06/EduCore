@@ -4,44 +4,45 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
 
-public class LogoutModel : PageModel
+namespace CourseWeb.Pages.Home
 {
-    [TempData]
-    public string LogoutError { get; set; }
-
-    public IActionResult OnGet()
+    public class LogoutModel : PageModel
     {
-        var userJson = HttpContext.Session.GetString("User");
-        if (!string.IsNullOrEmpty(userJson))
+        [TempData]
+        public string LogoutError { get; set; }
+
+        public IActionResult OnGet()
         {
-            try
+            var userJson = HttpContext.Session.GetString("User");
+            if (!string.IsNullOrEmpty(userJson))
             {
-                var user = JsonConvert.DeserializeObject<UserDTO>(userJson);
-                HttpContext.Session.Clear();
-                switch (user.RoleId)
+                try
                 {
-                    case 1:
-                        return RedirectToPage("/Student/Index");
-                    case 2:
-                        return RedirectToPage("/Admin/Index");
-                    case 3:
-                        return RedirectToPage("/Instructor/Index");
-                    default:
-                        return RedirectToPage("/Home/LoginAndSignup");
+                    var user = JsonConvert.DeserializeObject<UserDTO>(userJson);
+                    HttpContext.Session.Clear();
+                    switch (user.RoleId)
+                    {
+                        case 1:
+                            return RedirectToPage("/Student/Index");
+                        case 2:
+                            return RedirectToPage("/Admin/Index");
+                        case 3:
+                            return RedirectToPage("/Instructor/Index");
+                        default:
+                            return RedirectToPage("/Home/LoginAndSignup");
+                    }
+                }
+                catch (JsonException)
+                {
+                    LogoutError = "Error during logout. Please try again.";
+                    return RedirectToPage("/Home/LoginAndSignup");
                 }
             }
-            catch (JsonException)
+            else
             {
-                // Handle JSON deserialization errors
-                LogoutError = "Error during logout. Please try again.";
+                LogoutError = "No user is logged in.";
                 return RedirectToPage("/Home/LoginAndSignup");
             }
-        }
-        else
-        {
-            // Handle case where session data is missing
-            LogoutError = "No user is logged in.";
-            return RedirectToPage("/Home/LoginAndSignup");
         }
     }
 }

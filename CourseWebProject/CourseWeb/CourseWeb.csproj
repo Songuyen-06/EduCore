@@ -890,4 +890,8 @@
     <ProjectReference Include="..\CourseAPI\CourseAPI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Student\Checkout\" />
+  </ItemGroup>
+
 </Project>
