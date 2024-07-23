@@ -1,0 +1,92 @@
+﻿@* @page
+@model CourseWeb.Pages.Admin.Category.AddModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Add Category</h1>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Category.CategoryId" class="control-label">Category ID</label>
+                <input asp-for="Category.CategoryId" class="form-control" readonly />
+                <span asp-validation-for="Category.CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.CategoryName" class="control-label">Category Name</label>
+                <input asp-for="Category.CategoryName" class="form-control" />
+                <span asp-validation-for="Category.CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Subcategories</label>
+                <div id="subcategories-container">
+                    
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Admin/Category/ListCategory" class="btn btn-secondary">Back</a>
+        </form>
+    </div>
+</body>
+</html>
+ *@
+ @page
+@model CourseWeb.Pages.Admin.Category.AddModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Function to add a new subcategory field
+            $('#add-subcategory').click(function () {
+                var index = $('#subcategories-container .subcategory-group').length;
+                var newSubcategory = `
+                            <div class="subcategory-group mb-3">
+                                <div class="form-group">
+                                    <label for="Category_SubCategories_${index}__SubCategoryName" class="control-label">Subcategory Name</label>
+                                    <input type="text" name="Category.SubCategories[${index}].SubCategoryName" class="form-control" />
+                                    <span class="text-danger"></span>
+                                </div>
+                            </div>`;
+                $('#subcategories-container').append(newSubcategory);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Add Category</h1>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Category.CategoryId" class="control-label">Category ID</label>
+                <input asp-for="Category.CategoryId" class="form-control" readonly />
+                <span asp-validation-for="Category.CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.CategoryName" class="control-label">Category Name</label>
+                <input asp-for="Category.CategoryName" class="form-control" />
+                <span asp-validation-for="Category.CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Subcategories</label>
+                <div id="subcategories-container">
+                    <!-- Existing subcategory fields will be dynamically added here -->
+                </div>
+                <button type="button" id="add-subcategory" class="btn btn-success">Add Subcategory</button>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Admin/Category/ListCategory" class="btn btn-secondary">Back</a>
+        </form>
+    </div>
+</body>
+</html>

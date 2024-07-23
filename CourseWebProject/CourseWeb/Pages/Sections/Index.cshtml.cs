@@ -27,7 +27,7 @@ namespace CourseWeb.Pages.Sections
         public async Task OnGetAsync(int courseId)
         {
             
-            Course = await _courseService.getCourseDetailByCourseId(courseId);
+            Course = await _courseService.GetCourseDetailByCourseId(courseId);
             Sections = await _sectionService.GetAllSectionByCourseId(courseId);
         }
     }

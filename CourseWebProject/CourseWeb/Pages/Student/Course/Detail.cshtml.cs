@@ -28,7 +28,7 @@ namespace CourseWeb.Pages.Student.Course
                 var u = JsonConvert.DeserializeObject<UserDTO>(userJson);
                 ViewData["NumberCourseCart"] = (await courseService.GetListCourseByStudentId(u.UserId, true)).Count();
             }
-            CourseDetail =await  courseService.getCourseDetailByCourseId(cId);
+            CourseDetail =await  courseService.GetCourseDetailByCourseId(cId);
             RelatedCourses = await courseService.GetListCoursesBySubCategoryId(CourseDetail.SubCategoryId);
             ViewData["Categories"] = await categoryService.GetListCategory();
 

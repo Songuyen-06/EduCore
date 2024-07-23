@@ -1,0 +1,269 @@
+﻿@page
+@model CourseWeb.Pages.Admin.IndexModel
+@{
+
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Course Web</title>
+    <link rel="shortcut icon" type="image/png" href="/images/logos/favicon.png" />
+    <link rel="stylesheet" href="/css/styles.min.css" />
+    <style>
+
+        .dashboard-content {
+            margin-left: 250px;
+            padding: 20px;
+            background-color: #f8f9fa; 
+            min-height: 100vh; 
+        }
+
+        .card {
+            border: 1px solid #dee2e6; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            background-color: #ffffff; 
+            margin-bottom: 20px; 
+            transition: transform 0.2s; 
+        }
+
+           
+            .card:hover {
+                transform: translateY(-5px); 
+            }
+
+       
+        .card-title {
+            font-size: 1.25rem; 
+            font-weight: 600; 
+            color: #343a40; 
+            margin-bottom: 10px; 
+        }
+
+        
+        .card-text {
+            font-size: 1rem; 
+            color: #6c757d; 
+        }
+
+        
+        .container-fluid {
+            max-width: 1200px; 
+            margin: 0 auto; 
+        }
+
+       
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .table th, .table td {
+            text-align: center;
+        }
+
+        .btn-action {
+            margin: 0 5px;
+        }
+
+        .form-container .btn-back {
+            background-color: #ffc107;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+         data-sidebar-position="fixed" data-header-position="fixed">
+        <!-- Sidebar Start -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div>
+                <div class="brand-logo d-flex align-items-center justify-content-between">
+                    <a href="./index.html" class="text-nowrap logo-img">
+                        <img src="../images/admin/logos/dark-logo.svg" width="180" alt="" />
+                    </a>
+                    <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+                        <i class="ti ti-x fs-8"></i>
+                    </div>
+                </div>
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">
+                            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                            <span class="hide-menu">Home</span>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" active" href="./index.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-layout-dashboard"></i>
+                                </span>
+                                <span class="hide-menu">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/Admin/User/ListUser" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-article"></i>
+                                </span>
+                                <span class="hide-menu">User</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/Admin/Category/ListCategory" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-alert-circle"></i>
+                                </span>
+                                <span class="hide-menu">Category</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-cards"></i>
+                                </span>
+                                <span class="hide-menu">Chart</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="/Home/Logout" >
+                                <span>
+                                    <i class="ti ti-file-description"></i>
+                                </span>
+                                <span class="hide-menu">Logout</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Total Users Card -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Users</h5>
+                                <p class="card-text">@Model.TotalUsers</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Total Categories Card -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Total Categories</h5>
+                                <p class="card-text">@Model.TotalCates</p>
+
+                            </div>
+                        </div>
+                    </div>
+                   @*  list user *@
+                    <div class="container">
+                     
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Password</th>
+                                    <th>Bio</th>
+                                    <th>UrlImage</th>
+                                    <th>RoleId</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in Model.Users)
+                                {
+                                    <tr>
+                                        <td>@user.UserId</td>
+                                        <td>@user.FullName</td>
+                                        <td>@user.Email</td>
+                                        <td>@user.Phone</td>
+                                        <td>@user.Password</td>
+                                        <td>@user.Bio</td>
+                                        <td><img src="@user.UrlImage" alt="User Image" style="max-width: 100px;" /></td>
+                                        <td>@user.RoleId</td>
+                                        
+                                    </tr>
+                                }
+                            </tbody>
+                           
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add your JavaScript to fetch and display the data -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // Fetch total users
+                fetch('/Admin/User/TotalUsers')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('total-users').textContent = data.totalUsers;
+                    });
+
+                // Fetch total categories
+                fetch('/Admin/Category/TotalCategories')
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('total-categories').textContent = data.totalCategories;
+                    });
+            });
+        </script>
+
+
+    </div>
+
+    </div>
+    <script src="/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/js/sidebarmenu.js"></script>
+    <script src="/js/app.min.js"></script>
+
+    <script src="/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script src="/libs/simplebar/dist/simplebar.js"></script>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+
+</html>
+
+

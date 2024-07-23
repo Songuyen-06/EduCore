@@ -1,5 +1,8 @@
 ﻿
 using CourseDomain.DTOs;
+using Microsoft.AspNetCore.Mvc;
+using System.Text;
+using System.Text.Json;
 
 namespace CourseWeb.Services
 {
@@ -18,9 +21,9 @@ namespace CourseWeb.Services
             return null;
         }
 
-        public async Task<CourseDetailDTO> getCourseDetailByCourseId(int courseId)
+        public async Task<CourseDetailDTO> GetCourseDetailByCourseId(int courseId)
         {
-            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getCourseByCourseId/{courseId}");
+            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/Course/getCourseDetailByCourseId/{courseId}");
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<CourseDetailDTO>();
         }
@@ -102,6 +105,13 @@ namespace CourseWeb.Services
             response.EnsureSuccessStatusCode();
             return await response.Content.ReadFromJsonAsync<List<CourseDetailDTO>>();
         }
+        public async Task<int> AddStudentCourse(StudentCourseDTO stC)
+        {
+            var json = JsonSerializer.Serialize(stC);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync($"{_baseAPIRoute}/Course/addStudentCourse", content);
 
+            return response.IsSuccessStatusCode ? 1 : -1;
+        }
     }
 }
