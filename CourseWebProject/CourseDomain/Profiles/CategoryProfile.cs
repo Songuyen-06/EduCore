@@ -19,6 +19,7 @@ namespace CourseDomain.Profiles
                           .ForMember(dest => dest.SubCategories, opt => opt.MapFrom(opt => opt.SubCategories))
                           .ReverseMap();
                            
+
         }
     }
 }

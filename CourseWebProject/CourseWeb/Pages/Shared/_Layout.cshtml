@@ -1,4 +1,7 @@
 ﻿@using CourseDomain.DTOs
+@using CourseWeb.Services
+@using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,12 +30,13 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 
     <!-- Custom Styles -->
     <link rel="stylesheet" type="text/css" href="/css/vendor.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/style1.css">
-   
+
 
 
 
@@ -42,8 +46,14 @@
 <body>
     @{
         var categories = ViewData["Categories"] as List<CategoryDTO>;
-
-
+        var numberCourseInCart = (int?)ViewData["NumberCourseCart"];
+        var userJson = HttpContextAccessor.HttpContext?.Session?.GetString("User");
+        UserDTO? student = null;
+        if (!string.IsNullOrEmpty(userJson))
+        {                
+             student = JsonConvert.DeserializeObject<UserDTO>(userJson);
+        }
+       
     }
     <style>
 
@@ -104,30 +114,30 @@
                                             <a asp-page="/Course/Index" class="nav-link mx-2 dropdown-toggle" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
                                             <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
                                                 @if (categories != null && categories.Any())
-            {
-                                                foreach (var cate in categories)
                                                 {
-                                                    <li class="dropdown-submenu">
-                                                        <a href="/Student/Course/List?cateId=@cate.CategoryId" class="dropdown-item dropdown-toggle">@cate.CategoryName</a>
-                                                        <ul class="dropdown-menu">
-                                                            @if (cate.SubCategories.Any())
-                                                            {
-                                                                foreach (var subCate in cate.SubCategories)
+                                                    foreach (var cate in categories)
+                                                    {
+                                                        <li class="dropdown-submenu">
+                                                            <a href="/Student/Course/List?cateId=@cate.CategoryId" class="dropdown-item dropdown-toggle">@cate.CategoryName</a>
+                                                            <ul class="dropdown-menu">
+                                                                @if (cate.SubCategories.Any())
                                                                 {
-                                                                    <li>
-                                                                        <a href="/Student/Course/List?cateId=@cate.CategoryId&subCateId=@subCate.SubCategoryId" class="dropdown-item">@subCate.SubCategoryName</a>
-                                                                    </li>
+                                                                    foreach (var subCate in cate.SubCategories)
+                                                                    {
+                                                                        <li>
+                                                                            <a href="/Student/Course/List?cateId=@cate.CategoryId&subCateId=@subCate.SubCategoryId" class="dropdown-item">@subCate.SubCategoryName</a>
+                                                                        </li>
+                                                                    }
                                                                 }
-                                                            }
-                                                        </ul>
-                                                    </li>
-                                                }
+                                                            </ul>
+                                                        </li>
+                                                    }
                                                 }
                                             </ul>
                                         </li>
-                                        <li class="nav-item dropdown">
-                                            <a asp-page="/Instructor/Index" class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="instructors" data-bs-toggle="dropdown" aria-expanded="false">Instructors</a>
-                                            <ul class="dropdown-menu" aria-labelledby="courses">
+                                        <li class="nav-item ">
+                                            <a asp-page="/Student/Instructor/List" class="nav-link mx-2  align-items-center" >Instructors</a>
+                                           @*  <ul class="dropdown-menu" aria-labelledby="courses">
                                                 <li>
                                                     <a href="event.html" class="dropdown-item">
                                                         event<span class="badge bg-secondary-subtle text-dark ms-2">PRO</span>
@@ -138,7 +148,7 @@
                                                         event details<span class="badge bg-secondary-subtle text-dark ms-2">PRO</span>
                                                     </a>
                                                 </li>
-                                            </ul>
+                                            </ul> *@
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a asp-page="/Review/Index" class="nav-link mx-2 dropdown-toggle align-items-center" role="button" id="reviews" data-bs-toggle="dropdown" aria-expanded="false">Reviews</a>
@@ -181,23 +191,42 @@
                                     <!-----------------------------------------------------Login singup------------------------------->
                                     <div class="d-none d-lg-flex align-items-center ms-5">
                                         <ul class="d-flex justify-content-end  list-unstyled m-0">
-                                            <li>
-                                                <form id="loginForm" action="/Home/LoginAndSignup">
-                                                    <button type="submit" class="btn btn-outline-dark mx-3 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</button>
-                                                </form>
 
-                                            </li>
+                                            @if (student == null)
+                                            {
+                                                <li>
+                                                    <form id="loginForm" action="/Home/LoginAndSignup">
+                                                        <button type="submit" class="btn btn-outline-dark mx-3 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Login/Signup</button>
+                                                    </form>
+                                                </li>
+                                            }
+                                            else
+                                            {
+                                                <li>
 
-                                         
-                                            <li class="align-self-end">
-                                                <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
-                                                   aria-controls="offcanvasCart">
-                                                    <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                                                    <span class="position-absolute text-black translate-middle badge rounded-circle bg-primary">
-                                                        03
-                                                    </span>
-                                                </a>
-                                            </li>
+                                                    <form id="logoutForm" action="/Home/Logout">
+                                                        <button type="submit" class="btn btn-outline-dark mx-3 p-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Logout</button>
+                                                    </form>
+                                                </li>
+
+                                                <li class="align-self-end">
+                                                    <a href="/Student/Cart/List" >
+                                                        <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
+                                                        <span class="position-absolute text-black translate-middle badge rounded-circle bg-primary">
+                                                           @numberCourseInCart
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="my-auto">
+                                                        <i class="fas fa-user fa-2x"></i>
+                                                    </a>
+                                                </li>
+                                            }
+
+
+
+
 
                                         </ul>
 
@@ -363,7 +392,7 @@
         </div>
     </div>
 
-   
+
 
 
     <!-- JavaScript Libraries -->

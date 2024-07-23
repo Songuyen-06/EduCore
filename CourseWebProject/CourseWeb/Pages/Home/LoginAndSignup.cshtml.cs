@@ -44,18 +44,16 @@ namespace CourseWeb.Pages.Home
             if (user != null)
             {
                 var userJson = JsonConvert.SerializeObject(user);
+                HttpContext.Session.SetString("User", userJson);
 
                 switch (user.RoleId)
                 {
                     case 1: // Student
-                        HttpContext.Session.SetString("Student", userJson);
                         return RedirectToPage("/Student/Index");
-                    case 2: // Admin
-                        HttpContext.Session.SetString("Admin", userJson);
-                        return RedirectToPage("/Admin");
-                    case 3: // Instructor
-                        HttpContext.Session.SetString("Instructor", userJson);
-                        return RedirectToPage("/Instructor");
+                    case 3: // Admin
+                        return RedirectToPage("/Admin/Index");
+                    case 2: // Instructor
+                        return RedirectToPage("/Instructor/Index");
                     default:
                         LoginError = "Invalid role!";
                         return Page();
@@ -71,15 +69,29 @@ namespace CourseWeb.Pages.Home
 
         public async Task<IActionResult> OnPostSignup()
         {
-            // Implement signup logic here
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-            return RedirectToPage("/Home/Index");
+            var user = await _userService.GetUserByEmailAndPassword(User);
+
+            if (user != null)
+            {
+               
+                LoginError = "User Exits ,Please login";
+                return Page();
+            }
+            else
+            {
+                User.RoleId = 1;
+               _userService.CreateUser(User);
+                var userJson = JsonConvert.SerializeObject(User);
+                HttpContext.Session.SetString("User", userJson);
+                return Redirect("/Student");
+            }
         }
 
-        public IActionResult OnGetLogout()
-        {
-            HttpContext.Session.Clear();
-            return RedirectToPage("/Home/Index");
-        }
+        
     }
 }

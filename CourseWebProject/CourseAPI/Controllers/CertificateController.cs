@@ -9,7 +9,7 @@ namespace CourseAPI.Controllers
     [ApiController]
     public class CertificateController : ControllerBase
     {
-        ICertificateService _certificateService;
+      public   ICertificateService _certificateService;
 
         public CertificateController(ICertificateService certificateService)
         {

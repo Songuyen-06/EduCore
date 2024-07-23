@@ -20,7 +20,7 @@ namespace CourseInfrastructure.Repositories
         {
           return  _entitySet.Where(u => u.RoleId == 2).
                 Include(u => u.Courses).ThenInclude(c => c.Enrollments)
-                  .Include(u => u.Courses).ThenInclude(c => c.SubCategory);
+                  .Include(u => u.Courses).ThenInclude(c => c.SubCategory).ThenInclude(s=>s.Category);
         }
         public async Task<User> GetInstructorDetailById(int instructorId)
         {

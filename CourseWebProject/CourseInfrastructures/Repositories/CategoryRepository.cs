@@ -22,10 +22,10 @@ namespace CourseInfrastructure
         }
         public async Task<Category> GetCategoryByCateId(int cateId)
         {
-            return await GetAllCategory().FirstOrDefaultAsync(c => c.CategoryId == cateId); 
+            return await GetAllCategory().FirstOrDefaultAsync(c => c.CategoryId == cateId);
 
         }
-       
+
 
         public void Delete(Category category)
         {

@@ -12,6 +12,8 @@ namespace CourseDomain
 
         public IQueryable<Course> GetListCourseByInclude();
 
+        public Task<IEnumerable<Course>> GetListCourseByInstructorId(int Id);
+
         public Task<Course> GetCourseByCourseId(int courseId);
         public  Task<IEnumerable<Course>> GetListCourseByStudentId(int stdId, bool isInCart);
         public Task<bool> IsExistingCourse(int courseId);
@@ -19,6 +21,7 @@ namespace CourseDomain
         public  IQueryable<Course> GetTopSellingCourses();
         public Task<IEnumerable<Course>> GetTopSellingCoursesByCateId(int cateId);
 
+        public Task<Course> GetCourseDetailByCourseId(int Id);
 
 
     }

@@ -33,8 +33,11 @@ namespace CourseDomain.DTOs
         [JsonPropertyOrder(15)]
         public int? LectureNumber { get; set; }
 
+        [JsonPropertyOrder(16)]
+        public List<SectionDTO>? Sections { get; set; }
 
-
+        [JsonPropertyOrder(17)]
+        public List<ReviewDTO>? Reviews { get; set; }
     }
 
 }

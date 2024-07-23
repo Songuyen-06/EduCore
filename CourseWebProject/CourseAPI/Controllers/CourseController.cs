@@ -26,13 +26,18 @@ namespace CourseAPI.Controllers
             return Ok(courses);
         }
 
-
+        [HttpGet("/getListCourseByInstructorId/{instructorId}")]
+        public async Task<IActionResult> GetListCourseByInstructorId(int instructorId)
+        {
+            var courses = await _courseService.GetListCourseByInstructorId(instructorId);
+            return Ok(courses);
+        }
 
         // GET: api/Course
-        [HttpGet("getCourseByCourseId/{courseId}")]
-        public async Task<IActionResult> GetCourseByCourseId(int courseId)
+        [HttpGet("getCourseDetailByCourseId/{courseId}")]
+        public async Task<IActionResult> GetCourseDetailByCourseId(int courseId)
         {
-            var courses = await _courseService.GetCourseByCourseId(courseId);
+            var courses = await _courseService.GetCourseDetailByCourseId(courseId);
 
 
             return Ok(courses);

@@ -14,6 +14,12 @@ namespace CourseInfrastructure.Repositories
         public SubCategoryRepository(CoursesDbContext dbContext) : base(dbContext)
         {
         }
+
+        public Task<List<SubCategory>> GetAllSubCategory()
+        {
+            return _entitySet.ToListAsync();
+        }
+
         public async Task<bool> IsExistingSubCategory(int? cateId)
         {
             return await _entitySet.AnyAsync(c => c.CategoryId == cateId);

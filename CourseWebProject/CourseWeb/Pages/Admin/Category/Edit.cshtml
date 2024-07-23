@@ -1,0 +1,65 @@
+﻿
+
+@page
+@model CourseWeb.Pages.Admin.Category.EditModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Edit Category";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .subcategory-group {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">@ViewData["Title"]</h1>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Category.CategoryId" class="control-label">Category ID</label>
+                <input asp-for="Category.CategoryId" class="form-control" readonly />
+                <span asp-validation-for="Category.CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category.CategoryName" class="control-label">Category Name</label>
+                <input asp-for="Category.CategoryName" class="form-control" />
+                <span asp-validation-for="Category.CategoryName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label">Subcategories</label>
+                <div id="subcategories-container">
+                    @for (int i = 0; i < Model.Category.SubCategories.Count(); i++)
+                    {
+                        <div class="subcategory-group">
+                            <div class="form-group">
+                                <label asp-for="Category.SubCategories[i].SubCategoryId" class="control-label">Subcategory ID</label>
+                                <input asp-for="Category.SubCategories[i].SubCategoryId" class="form-control" readonly />
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Category.SubCategories[i].SubCategoryName" class="control-label">Subcategory Name</label>
+                                <input asp-for="Category.SubCategories[i].SubCategoryName" class="form-control" />
+                                <span asp-validation-for="Category.SubCategories[i].SubCategoryName" class="text-danger"></span>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+            <a href="/Admin/Category/ListCategory" class="btn btn-secondary">Back</a>
+        </form>
+    </div>
+</body>
+</html>
