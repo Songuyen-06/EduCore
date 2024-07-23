@@ -1,6 +1,8 @@
 ﻿@page
 @using CourseDomain.DTOs
 @using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
 @model CourseWeb.Pages.Student.IndexModel
 @{
 
@@ -10,7 +12,13 @@
     var numberCourses = (int?)ViewData["NumberCourses"];
     var numberCertificates = (int?)ViewData["NumberCertificates"];
     var numberStudents = (int?)ViewData["NumberStudents"];
-    var student = ViewData["Student"] as UserDTO;
+
+    var userJson = HttpContextAccessor.HttpContext?.Session?.GetString("User");
+    UserDTO? student = null;
+    if (!string.IsNullOrEmpty(userJson))
+    {
+        student = JsonConvert.DeserializeObject<UserDTO>(userJson);
+    }
 
 
 }
@@ -280,9 +288,17 @@
                                             <a href="#" class="btn btn-outline-dark text-capitalize me-2">
                                                 <iconify-icon icon="mdi:heart-outline" class="fs-5 pt-1"></iconify-icon>
                                             </a>
-                                            <a href="#" class="btn btn-outline-dark text-capitalize">
-                                                <iconify-icon icon="mdi:cart-outline" class="fs-5 pt-1"></iconify-icon>
-                                            </a>
+                                            @if (student != null)
+                                            {
+                                                <a href="/Student/Cart/Add?cId=@course.CourseId&stdId=@student.UserId" class="btn btn-outline-dark text-capitalize">
+                                                    <iconify-icon icon="mdi:cart-outline" class="fs-5 pt-1"></iconify-icon>
+                                                </a>
+                                            }else{
+                                                <a href="/Home/LoginAndSignup" class="btn btn-outline-dark text-capitalize">
+                                                    <iconify-icon icon="mdi:cart-outline" class="fs-5 pt-1"></iconify-icon>
+                                                </a>
+                                            }
+                                            
                                         </div>
                                     </div>
                                 </div>

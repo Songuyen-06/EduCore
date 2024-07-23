@@ -21,6 +21,7 @@ namespace CourseDomain
         public  IQueryable<Course> GetTopSellingCourses();
         public Task<IEnumerable<Course>> GetTopSellingCoursesByCateId(int cateId);
 
+        public Task<Course> GetCourseDetailByCourseId(int Id);
 
 
     }

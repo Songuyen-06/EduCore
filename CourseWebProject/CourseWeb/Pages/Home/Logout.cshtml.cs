@@ -24,9 +24,9 @@ namespace CourseWeb.Pages.Home
                     {
                         case 1:
                             return RedirectToPage("/Student/Index");
-                        case 2:
-                            return RedirectToPage("/Admin/Index");
                         case 3:
+                            return RedirectToPage("/Home/LoginAndSignup");
+                        case 2:
                             return RedirectToPage("/Instructor/Index");
                         default:
                             return RedirectToPage("/Home/LoginAndSignup");

@@ -148,5 +148,11 @@ namespace CourseServices
         {
             throw new NotImplementedException();
         }
+
+        public async Task<CourseDetailDTO> GetCourseDetailByCourseId(int cId)
+        {
+            return _mapper.Map<CourseDetailDTO>(await _unitOfWork.CourseRepository.GetCourseDetailByCourseId(cId));
+        }
+
     }
 }

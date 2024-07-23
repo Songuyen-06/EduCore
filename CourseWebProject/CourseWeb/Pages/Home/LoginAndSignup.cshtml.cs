@@ -50,9 +50,9 @@ namespace CourseWeb.Pages.Home
                 {
                     case 1: // Student
                         return RedirectToPage("/Student/Index");
-                    case 2: // Admin
+                    case 3: // Admin
                         return RedirectToPage("/Admin/Index");
-                    case 3: // Instructor
+                    case 2: // Instructor
                         return RedirectToPage("/Instructor/Index");
                     default:
                         LoginError = "Invalid role!";
@@ -69,9 +69,27 @@ namespace CourseWeb.Pages.Home
 
         public async Task<IActionResult> OnPostSignup()
         {
-            // Implement signup logic here
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
 
-            return RedirectToPage("/Home/Index");
+            var user = await _userService.GetUserByEmailAndPassword(User);
+
+            if (user != null)
+            {
+               
+                LoginError = "User Exits ,Please login";
+                return Page();
+            }
+            else
+            {
+                User.RoleId = 1;
+               _userService.CreateUser(User);
+                var userJson = JsonConvert.SerializeObject(User);
+                HttpContext.Session.SetString("User", userJson);
+                return Redirect("/Student");
+            }
         }
 
         

@@ -26,5 +26,7 @@ namespace CourseServices
 
         public Task<List<CourseDetailDTO>> GetTopSellingCoursesByCateId(int cateId);
         public Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId);
+        public  Task<CourseDetailDTO> GetCourseDetailByCourseId(int cId);
+
     }
 }

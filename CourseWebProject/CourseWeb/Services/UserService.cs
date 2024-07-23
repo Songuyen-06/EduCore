@@ -1,4 +1,7 @@
-﻿using CourseDomain.DTOs;
+﻿using CourseDomain.Contracts;
+using CourseDomain.DTOs;
+using System.Text;
+using System.Text.Json;
 
 namespace CourseWeb.Services
 {
@@ -12,10 +15,10 @@ namespace CourseWeb.Services
             _httpClient = httpClient;
         }
 
-        public Task<bool> CreateUser(UserDTO user)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<bool> CreateUser(UserDTO user)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public async Task<UserDTO> GetUserByEmailAndPassword(UserDTO u)
         {
@@ -40,6 +43,64 @@ namespace CourseWeb.Services
                 return null;
             }
         }
+
+        public async Task<List<UserDTO>> GetListUser()
+        {
+            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/User/getlistUser");
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<List<UserDTO>>();
+            }
+            return null;
+        }
+        public async Task<UserDTO> GetUserById(int id)
+        {
+            var response = await _httpClient.GetAsync($"{_baseAPIRoute}/User/getUserById?id={id}");
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<UserDTO>();
+            }
+            return null;
+        }
+        public async Task<bool> UpdateUser(UserDTO user)
+        {
+            var jsonContent = JsonSerializer.Serialize(user);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync($"{_baseAPIRoute}/User/updateUser?userId={user.UserId}", httpContent);
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Failed to update user. Status Code: {response.StatusCode}, Error: {errorContent}");
+            }
+            return response.IsSuccessStatusCode;
+        }
+        public async Task DeleteUser(int userId)
+        {
+            var response = await _httpClient.DeleteAsync($"{_baseAPIRoute}/User/deleteUser?userId={userId}");
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                throw new Exception($"Failed to delete user. Status Code: {response.StatusCode}, Error: {errorContent}");
+            }
+        }
+        public async Task<bool> CreateUser(UserDTO user)
+        {
+            var jsonContent = JsonSerializer.Serialize(user);
+            var httpContent = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync($"{_baseAPIRoute}/User/addUser", httpContent);
+            if (!response.IsSuccessStatusCode)
+            {
+                var errorContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Failed to create user. Status Code: {response.StatusCode}, Error: {errorContent}");
+            }
+            return response.IsSuccessStatusCode;
+        }
+        public async Task<int> GetNumberUser()
+        {
+            return await _httpClient.GetAsync("https://localhost:7004/odata/User/$count").Result.Content.ReadFromJsonAsync<int>();
+        }
+
+
 
     }
 }
