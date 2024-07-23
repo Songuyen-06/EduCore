@@ -493,22 +493,22 @@
                         @{
                             for (int rating = 5; rating >= 1; rating--)
                             {
-                                <div class="form-inline d-flex align-items-center py-2">
-                                    <label class="tick">
-                                        @{
+                                                <div class="form-inline d-flex align-items-center py-2">
+                                                    <label class="tick">
+                                                        @{
                                             for (int i = 1; i <= rating; i++)
                                             {
-                                                <span class="fas fa-star"></span>
+                                                                                <span class="fas fa-star"></span>
                                             }
 
                                             for (int i = rating + 1; i <= 5; i++)
                                             {
-                                                <span class="far fa-star px-1 text-muted"></span>
+                                                                                <span class="far fa-star px-1 text-muted"></span>
                                             }
-                                        }
-                                        <input onclick="getListCourseByRating(@rating)" type="checkbox" id="ratingCheckbox_@rating"> <span class="check"></span>
-                                    </label>
-                                </div>
+                                                        }
+                                                        <input onclick="getListCourseByRating(@rating)" type="checkbox" id="ratingCheckbox_@rating"> <span class="check"></span>
+                                                    </label>
+                                                </div>
                             }
                         }
                     </form>
@@ -523,11 +523,7 @@
                     <p class="p-2 m-2 mb-0 d-flex justify-content-center align-items-center">
 
 
-                        <a href="/Course/List?cateId=@(category.CategoryId)">
-                            <button id="btn_cate" onclick="setActiveButton('btn_cate')" class="filter-button px-3 py-2 mt-2 rounded-pill me-4 @(subCateId == null ? "active" : "disactive")">
-                                @category.CategoryName
-                            </button>
-                        </a>
+                       
 
 
                         @foreach (var subCate in subCategories)
@@ -552,18 +548,25 @@
                                         <div class="position-absolute m-3">
                                             <span class="badge text-muted bg-primary">@course.Duration</span>
                                         </div>
-                                        <a href="courses-details.html">
-                                            <img src="@course.Url" class="w-100 img-fluid rounded-3" alt="image">
-                                        </a>
+                                    <a href="/Student/Course/Detail?cId=@course.CourseId">
+                                        <img src="@course.Url" class="w-100 img-fluid rounded-3" alt="image">
+                                    </a>
                                     </div>
                                     <div class="card-body p-0">
                                         <div class=" mt-3 mb-1">
                                             <span class="badge text-muted bg-success d-inline">@course.Level</span>
                                             <span class="badge text-muted bg-success d-inline">@course.SectionNumber section</span>
                                             <span class="badge text-muted bg-success d-inline">@course.LectureNumber lecture </span>
-                                        </div>                                        <a href="courses-details.html">
-                                            <h5 class="py-2 m-0">@course.Title-@course.InstructorName</h5>
-                                        </a>
+                                        </div>                                       
+                                        <h5 class="py-2 m-0">
+                                            @course.Title-
+                                            <a href="/Student/Instructor/Detail?insId=@course.InstructorId">
+                                                <span class="text-primary">
+                                                    @course.InstructorName
+                                                </span>
+                                                <a />
+                                        </h5>
+                                   
                                         <div class="card-text">
                                             <span class="rating d-flex align-items-center mb-2">
                                                 <h6 class="text-primary m-0 me-2">@course.Rating</h6>
@@ -579,7 +582,7 @@
                                                 @{
                                                     if (halfStar)
                                                     {
-                                                        <i class="fas fa-star-half-alt text-primary"></i>
+                                                                        <i class="fas fa-star-half-alt text-primary"></i>
                                                     }
                                                 }
                                                 @for (var i = 0; i < totalStars - (floorStars + (halfStar ? 1 : 0)); i++)
@@ -704,7 +707,6 @@
             let filterResult = @Html.Raw(Json.Serialize(@Model.Courses));
             let numberPage =@Html.Raw(Json.Serialize(numberPage));
 
-
            
 
             function getListCourseByApi(url) {
@@ -712,7 +714,7 @@
                     url: url,
                     success: function (result) {
                         console.log(result);
-                        if(result.length>0){
+                        if(result.length>8){
                          numberPage= Math.ceil(result.length / 8);
 
                         }
@@ -726,10 +728,11 @@
 
             
             function displayListCourse(courses) {
-                let courseHtml = '';
+                if (courses.length > 0) {
+                    let courseHtml = '';
 
-                courses.slice(0, 8).forEach(function (course) {
-                    courseHtml += `
+                    courses.slice(0, 8).forEach(function (course) {
+                        courseHtml += `
                                                             <div class="col-md-3 col-sm-6 my-3">
                                                                                 <div class="p-3 card h-100 shadow rounded-4 border-5 border-dark item digital">
                                                                                     <div class="position-relative">
@@ -737,7 +740,7 @@
                                                                                             <span class="badge text-muted bg-primary">${course.duration}</span>
                                                                                         </div>
                                                                                         <a href="courses-details.html">
-                                                                                            <img src="${course.urlImage}" class="img-fluid rounded-3" alt="image">
+                                                                                            <img src="${course.url}" class="img-fluid rounded-3" alt="image">
                                                                                         </a>
                                                                                     </div>
                                                                                     <div class="card-body p-0">
@@ -771,37 +774,54 @@
                                                                                     </div>
                                                                                 </div>
                                                              </div>`;
-                });
-                console.log(`Number Page=${numberPage}`);
-                console.log(`subCateId=${subCateId}`);
-                console.log(`cateId=${cateId}`);
+                    });
+                    console.log(`Number Page=${numberPage}`);
+                    console.log(`subCateId=${subCateId}`);
+                    console.log(`cateId=${cateId}`);
 
 
-                let paginationHtml = '';
-                 let url=`https://localhost:7004/api/Course`;
+                    let paginationHtml = ' <div class="pagination d-flex justify-content-center align-items-center">';
 
-                for (let i = 1; i <= numberPage; i++) {
-                    if (subCateId != null && selectedRating == null) {
-                        url += `/GetListCourseBySubCategoryId/${subCateId}?$skip=${(i - 1) * 8}&$top=8`;
-                        
-                    } else if (selectedRating != null) {
-                        url+=  subCateId!=null?`/GetListCourseBySubCategoryId/${subCateId}?$filter=Rating ge ${selectedRating}&$skip=${(i - 1) * 8}&$top=8&$orderBy=Rating`:
-                             `/GetListCourseByCategoryId/${cateId}?$filter=Rating ge ${selectedRating}&$skip=${(i - 1) * 8}&$top=8&$orderBy=Rating`;    
-                    } else {
-                        url += `/GetListCourseByCategoryId/${cateId}?$skip=${(i - 1) * 8}&$top=8`;
-                    }
-                      console.log(url);
-                       paginationHtml += i == numberPage ? `
-                        <button id="page${i}" onclick="getListCourseByApi('${url}'); setActivePage(${i})" class="filter-button px-3 py-2 mt-2 rounded-pill me-4 ${i == 1 ? "active" : "disactive"}">
+                    for (let i = 1; i <= numberPage; i++) {
+
+                        let url = `https://localhost:7004/api/Course`;
+
+                        if (subCateId != null && selectedRating == null) {
+                            url += `/GetListCourseBySubCategoryId/${subCateId}?$skip=${(i - 1) * 8}&$top=8`;
+
+                        } else if (selectedRating != null) {
+                            url += subCateId != null ? `/GetListCourseBySubCategoryId/${subCateId}?$filter=Rating ge ${selectedRating}&$skip=${(i - 1) * 8}&$top=8&$orderBy=Rating` :
+                                `/GetListCourseByCategoryId/${cateId}?$filter=Rating ge ${selectedRating}&$skip=${(i - 1) * 8}&$top=8&$orderBy=Rating`;
+                        } else {
+                            url += `/GetListCourseByCategoryId/${cateId}?$skip=${(i - 1) * 8}&$top=8`;
+                        }
+                        console.log(url);
+                        paginationHtml += i == numberPage ? 
+                       `<button id="page${i}" onclick="getListCourseByApi('${url}'); setActivePage(${i})" class="filter-button px-3 py-2 mt-2 rounded-pill me-4 ${i == 1 ? "active" : "disactive"}">
                             Last
                         </button>` : `
                         <button id="page${i}" onclick="getListCourseByApi('${url}'); setActivePage(${i})" class="filter-button px-3 py-2 mt-2 rounded-pill me-4 ${i == 1 ? "active" : "disactive"}">
                             ${i}
                         </button>`;
+                    }
+                    paginationHtml += '</div>';
+
+                    $('#courses_content').html(courseHtml + paginationHtml);
+
+
+
+                } else {
+                    var noti = `<div class="image-container text-center m-5">
+                <i class="bi bi-file-earmark-x" style="font-size: 5rem; color: #6c757d;"></i>
+                <p class="mt-2">Not found course</p>
+                 </div>`;
+
+                    $('#courses_content').html(noti);
+
+
+
                 }
 
-                $('#courses_content').html(courseHtml + paginationHtml);
-            
 
                 var buttons = document.querySelectorAll('.filter-button');
 
@@ -826,41 +846,36 @@
                 console.log(`length filter rating=${filterResult.length}`);
 
                 let url = `https://localhost:7004/api/Course`;
-          url += subCateId != null
-          ? `/GetListCourseBySubCategoryId/${subCateId}?$filter=Rating ge ${selectedRating}&$orderBy=Rating`
-         : `/GetListCourseByCategoryId/${cateId}?$filter=Rating ge ${selectedRating}&$orderBy=Rating`;
+                url += subCateId != null
+                    ? `/GetListCourseBySubCategoryId/${subCateId}?$filter=Rating ge ${selectedRating} and Rating le ${selectedRating + 1}&$orderBy=Rating`
+                    : `/GetListCourseByCategoryId/${cateId}?$filter=Rating ge ${selectedRating} and Rating le ${selectedRating + 1}&$orderBy=Rating`;
 
-            
-           getListCourseByApi(url);
+
+               getListCourseByApi(url);
 
                 }
 
-            
+
 
             function setActiveButton(buttonId) {
                 console.log("Button clicked:", buttonId);
 
-                var buttons = document.querySelectorAll('.filter-button');
+                $('.filter-button').removeClass('active').addClass('inactive');
 
-                buttons.forEach(function (button) {
-                    button.classList.remove('active');
-                    button.classList.add('inactive');
-                });
+                var activeButton = $(`#${buttonId}`);
+                console.log("Active button value:", activeButton.val());
 
-                var activeButton = document.getElementById(buttonId);
-                console.log("Active button value:", activeButton.value);
-
-                activeButton.classList.remove('inactive');
-                activeButton.classList.add('active');
+                activeButton.removeClass('inactive').addClass('active');
                 activingBtnId = buttonId;
 
                 if (buttonId === "btn_cate") {
-                    cateId = activeButton.value;
+                    cateId = activeButton.val();
                     subCateId = null;
                 } else {
-                    subCateId = activeButton.value;
+                    subCateId = activeButton.val();
                 }
             }
+
 
             function setActivePage(pageNumber) {
                 $('.pagination .filter-button').removeClass('active').addClass('inactive');

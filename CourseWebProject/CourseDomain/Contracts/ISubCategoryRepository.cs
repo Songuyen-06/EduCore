@@ -10,6 +10,6 @@ namespace CourseDomain.Contracts
     public  interface ISubCategoryRepository: IGenericRepository<SubCategory>
     {
         public Task<bool> IsExistingSubCategory(int? cateId);
-
+        public Task<List<SubCategory>> GetAllSubCategory();
     }
 }

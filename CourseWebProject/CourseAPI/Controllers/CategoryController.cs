@@ -19,7 +19,7 @@ namespace CourseAPI.Controllers
 
         [HttpGet("getListCategory")]
         [EnableQuery]
-        public async Task<IActionResult> GetListCategory()
+        public async Task<IActionResult> Get()
         {
             return Ok(await _categoryService.GetListCategory());
 
@@ -31,7 +31,7 @@ namespace CourseAPI.Controllers
             return Ok();
         }
         [HttpGet("getCategoryByCateId/{cateId}")]
-        
+
         public async Task<IActionResult> GetCategoryByCateId(int cateId)
         {
             return Ok(await _categoryService.GetCategoryByCateId(cateId));
@@ -47,7 +47,7 @@ namespace CourseAPI.Controllers
         public async Task<IActionResult> DeleteCategory(int categoryId)
         {
             await _categoryService.DeleteCategory(categoryId);
-            return Ok();    
+            return Ok();
         }
     }
 }

@@ -139,6 +139,20 @@ namespace CourseServices
             return _mapper.Map<List<CourseDetailDTO>>(await _unitOfWork.CourseRepository.GetListCourseByCategoryId(cateId));
         }
 
-       
+        public async Task<List<CourseDTO>> GetListCourseByInstructorId(int instructorId)
+        {
+            return _mapper.Map<List<CourseDTO>>(await _unitOfWork.CourseRepository.GetListCourseByInstructorId(instructorId));
+        }
+
+        public Task<List<CourseDTO>> ListCourseByStudentId(int stdId, bool isInCart)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<CourseDetailDTO> GetCourseDetailByCourseId(int cId)
+        {
+            return _mapper.Map<CourseDetailDTO>(await _unitOfWork.CourseRepository.GetCourseDetailByCourseId(cId));
+        }
+
     }
 }
