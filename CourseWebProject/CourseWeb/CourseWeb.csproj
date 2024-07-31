@@ -18,13 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Pages\Admin\Category\Add.cshtml" />
-    <None Include="Pages\Admin\Category\Edit.cshtml" />
-    <None Include="Pages\Admin\Category\ListCategory.cshtml" />
-    <None Include="Pages\Admin\Index.cshtml" />
-    <None Include="Pages\Admin\User\Add.cshtml" />
-    <None Include="Pages\Admin\User\Edit.cshtml" />
-    <None Include="Pages\Admin\User\ListUser.cshtml" />
     <None Include="wwwroot\assets\ajax\post.php" />
     <None Include="wwwroot\assets\ajax\server-processing.php" />
     <None Include="wwwroot\assets\css\ratio.css.map" />
