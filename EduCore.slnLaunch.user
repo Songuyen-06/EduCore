@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BackEnd\\Presentation\\Presentation.csproj",
+        "Action": "Start",
+        "DebugTarget": "EduCore.BackEnd.Presentation.Development"
+      },
+      {
+        "Path": "FrontEnd\\RazorPageApp\\RazorPageApp.csproj",
+        "Action": "Start",
+        "DebugTarget": "EduCore.FrontEnd.RazorPageApp"
+      }
+    ]
+  }
+]
