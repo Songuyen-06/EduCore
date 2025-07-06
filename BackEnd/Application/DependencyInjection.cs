@@ -17,21 +17,24 @@ public static class DependencyInjection
     {
         //services.AddScoped<IPaymentGatewayService, VnPayGatewayService>();
 
-        services.AddAutoMapper(typeof(CourseProfile).Assembly);
-        services.AddScoped<ISubCategoryService, SubCategoryService>();
-        services.AddScoped<ICourseService, CourseService>();
-        services.AddScoped<ICategoryService, CategoryService>();
-        services.AddScoped<ISectionService, SectionService>();
-        services.AddScoped<IReviewService, ReviewService>();
-        services.AddScoped<ICategoryService, CategoryService>();
-        services.AddScoped<IUserService, UserService>();
-        services.AddScoped<IInstructorService, InstructorService>();
-        services.AddScoped<ICertificateService, CertificateService>();
-        services.AddScoped<ILectureService, LectureService>();
-        services.AddScoped<ICommentService, CommentService>();
-        services.AddScoped<ICheckoutService, CheckoutService>();
-        services.AddScoped<IEnrollmentService, EnrollmentService>();
-        services.AddScoped<IStudentService, StudentService>();
+        // Register scoped services
+       services.AddScoped<ICourseService, CourseService>();
+       services.AddScoped<ISectionService, SectionService>();
+       services.AddScoped<ISubCategoryService, SubCategoryService>();
+       services.AddScoped<ICategoryService, CategoryService>();
+       services.AddScoped<IReviewService, ReviewService>();
+       services.AddScoped<IInstructorService, InstructorService>();
+       services.AddScoped<ICertificateService, CertificateService>();
+       services.AddScoped<IStudentService, StudentService>();
+       services.AddScoped<IUserService, UserService>();
+       services.AddScoped<ILectureService, LectureService>();
+       services.AddScoped<ICommentService, CommentService>();
+        //builder.Services.AddScoped<IAIService, AIService>();
+       services.AddScoped<IEnrollmentService, EnrollmentService>();
+       services.AddScoped<ICheckoutService, CheckoutService>();
+       //services.AddScoped<IEmailService, EmailService>();
+       //services.AddScoped<IVnPayService, VnPayService>();
+       //services.AddScoped<ICompletionStatusService, CompletionStatusServicec>();
 
 
         return services;

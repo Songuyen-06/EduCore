@@ -22,24 +22,8 @@ builder.Services.AddAuthentication(options =>
 //});
 builder.Services.AddSignalR();
 
-// Register scoped services
-builder.Services.AddScoped<ICourseService,CourseService>();
-builder.Services.AddScoped<ISectionService, SectionService>();
-builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped<IReviewService, ReviewService>();
-builder.Services.AddScoped<IInstructorService, InstructorService>();
-builder.Services.AddScoped<ICertificateService, CertificateService>();
-builder.Services.AddScoped<IStudentService, StudentService>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<ILectureService, LectureService>();
-builder.Services.AddScoped<ICommentService, CommentService>();
-//builder.Services.AddScoped<IAIService, AIService>();
-builder.Services.AddScoped<IVnPayService, VnPayService>();
-builder.Services.AddScoped<ICheckoutService, CheckoutService>();
-builder.Services.AddScoped<IEmailService, EmailService>();
-builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
-builder.Services.AddScoped<ICompletionStatusService,CompletionStatusServicec>();
+
+
 builder.Services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
 
 // Configure session services
