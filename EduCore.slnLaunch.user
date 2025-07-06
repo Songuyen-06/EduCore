@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "BackEnd\\Presentation\\Presentation.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "FrontEnd\\RazorPageApp\\RazorPageApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
