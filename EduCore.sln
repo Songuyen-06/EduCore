@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{A583AC69-BF80-4225-B001-5FC402BE3A4F}"
+	ProjectSection(SolutionItems) = preProject
+		D:\Đồ Án\SEP490-G10-SPR25\BE-SEP490-G10-SPR25\AppointmentSchedulingApp.Application\.gitignore = D:\Đồ Án\SEP490-G10-SPR25\BE-SEP490-G10-SPR25\AppointmentSchedulingApp.Application\.gitignore
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "BackEnd\Application\Application.csproj", "{09B42AD5-BBE1-572C-B555-FF85175AD7CA}"
 EndProject
